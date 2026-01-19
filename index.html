@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ark Console | Autonomous Business Infrastructure</title>
-    <meta name="description" content="Ark Console - The world's first autonomous business infrastructure. Your business runs itself.">
+    <title>Ark Console | Autonomous Deal Governance</title>
+    <meta name="description" content="Ark Console - The supervision layer for deal management. Graduated autonomy with human oversight.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
 <body>
-    <!-- Cursor Glow Effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
-
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
@@ -23,9 +20,10 @@
                 <span class="logo-text">Ark Console</span>
             </a>
             <div class="nav-links">
-                <a href="#how-it-works">How It Works</a>
-                <a href="#capabilities">Capabilities</a>
-                <a href="#vision">Vision</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#autonomy-levels">Autonomy Levels</a>
+                <a href="#modules">Modules</a>
+                <a href="fsd-portal.html">FSD Portal</a>
                 <a href="#" class="nav-cta">Request Access</a>
             </div>
             <button class="nav-mobile-toggle" id="mobileToggle">
@@ -40,45 +38,39 @@
         <div class="hero-bg">
             <div class="hero-gradient"></div>
             <div class="hero-grid"></div>
-            <div class="hero-particles" id="particles"></div>
         </div>
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="badge-dot"></span>
-                Autonomous Business Infrastructure
+                Autonomous Deal Governance
             </div>
             <h1 class="hero-title">
-                <span class="title-line">Your Business</span>
-                <span class="title-line title-gradient">Runs Itself.</span>
+                <span class="title-line">Supervision.</span>
+                <span class="title-line">Not Automation.</span>
             </h1>
             <p class="hero-subtitle">
-                Ark Console is the world's first autonomous infrastructure that operates, scales, and optimizes your entire business — without human intervention.
+                Ark Console is the supervision layer for deal management. Like Tesla's Autopilot interface — it monitors, constrains, and validates autonomous systems while maintaining human oversight.
             </p>
             <div class="hero-cta">
-                <a href="#" class="btn btn-primary">
-                    <span>Deploy Autonomy</span>
+                <a href="#philosophy" class="btn btn-primary">
+                    <span>Understand the Philosophy</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
                     </svg>
                 </a>
-                <a href="#how-it-works" class="btn btn-secondary">
-                    <span>See How It Works</span>
-                </a>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-value" data-value="99.97">0</span><span class="stat-suffix">%</span>
-                    <span class="stat-label">Autonomous Uptime</span>
+            <div class="hero-principles">
+                <div class="principle">
+                    <span class="principle-icon">◇</span>
+                    <span class="principle-text">Safety over convenience</span>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-value" data-value="847">0</span><span class="stat-suffix">x</span>
-                    <span class="stat-label">Faster Than Manual</span>
+                <div class="principle">
+                    <span class="principle-icon">◇</span>
+                    <span class="principle-text">Graduated trust</span>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-value" data-value="0">0</span>
-                    <span class="stat-label">Human Operators Required</span>
+                <div class="principle">
+                    <span class="principle-icon">◇</span>
+                    <span class="principle-text">Human oversight</span>
                 </div>
             </div>
         </div>
@@ -88,301 +80,461 @@
                     <div class="console-dots">
                         <span></span><span></span><span></span>
                     </div>
-                    <span class="console-title">ark-console</span>
+                    <span class="console-title">ark-console · deal supervision</span>
                 </div>
                 <div class="console-body">
-                    <div class="console-line" data-delay="0">
+                    <div class="console-line">
                         <span class="console-prompt">▸</span>
-                        <span class="console-text">Initializing autonomous systems...</span>
+                        <span class="console-text">Autonomy Level:</span>
+                        <span class="console-status level-2">ADVISORY</span>
                     </div>
-                    <div class="console-line" data-delay="400">
+                    <div class="console-line">
                         <span class="console-prompt">▸</span>
-                        <span class="console-text">Scanning business operations...</span>
-                        <span class="console-status success">COMPLETE</span>
+                        <span class="console-text">90-Day Control Period:</span>
+                        <span class="console-status">Day 34 of 90</span>
                     </div>
-                    <div class="console-line" data-delay="800">
+                    <div class="console-line">
                         <span class="console-prompt">▸</span>
-                        <span class="console-text">Deploying AI agents...</span>
-                        <span class="console-status success">24 ACTIVE</span>
+                        <span class="console-text">Deposit variance detected</span>
+                        <span class="console-status warning">REVIEW REQUIRED</span>
                     </div>
-                    <div class="console-line" data-delay="1200">
+                    <div class="console-line">
                         <span class="console-prompt">▸</span>
-                        <span class="console-text">Revenue optimization...</span>
-                        <span class="console-status highlight">+347%</span>
+                        <span class="console-text">Disbursement request blocked</span>
+                        <span class="console-status blocked">GATE FAILED</span>
                     </div>
-                    <div class="console-line" data-delay="1600">
+                    <div class="console-line">
                         <span class="console-prompt">▸</span>
-                        <span class="console-text">Cost reduction engine...</span>
-                        <span class="console-status highlight">-62%</span>
+                        <span class="console-text">Evidence packet generated</span>
+                        <span class="console-status success">IMMUTABLE</span>
                     </div>
-                    <div class="console-line" data-delay="2000">
+                    <div class="console-line">
                         <span class="console-prompt">◈</span>
-                        <span class="console-text typing">Business operating autonomously_</span>
+                        <span class="console-text dim">Awaiting human approval...</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll to explore</span>
+            <span>Scroll to learn more</span>
             <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <!-- Problem Section -->
-    <section class="problem">
+    <!-- Design Philosophy Callout -->
+    <section class="callout">
         <div class="container">
-            <div class="problem-content">
-                <h2 class="section-label">The Problem</h2>
-                <h3 class="problem-title">
-                    Businesses are run by humans.<br>
-                    <span class="text-muted">Humans don't scale.</span>
-                </h3>
-                <div class="problem-grid">
-                    <div class="problem-item">
-                        <div class="problem-icon">⏱</div>
-                        <h4>Manual Operations</h4>
-                        <p>Every decision bottlenecks through human bandwidth. Sleep, meetings, vacations — your business stops when you do.</p>
-                    </div>
-                    <div class="problem-item">
-                        <div class="problem-icon">📉</div>
-                        <h4>Reactive, Not Proactive</h4>
-                        <p>Problems are discovered after damage is done. Opportunities pass while you're solving yesterday's fires.</p>
-                    </div>
-                    <div class="problem-item">
-                        <div class="problem-icon">🔗</div>
-                        <h4>Fragmented Systems</h4>
-                        <p>Dozens of tools that don't talk. Data silos. Manual integrations. Context lost between handoffs.</p>
-                    </div>
-                    <div class="problem-item">
-                        <div class="problem-icon">💸</div>
-                        <h4>Expensive to Scale</h4>
-                        <p>Growth means hiring. Hiring means overhead, training, management. The cost curve bends the wrong way.</p>
-                    </div>
-                </div>
-            </div>
+            <blockquote class="callout-quote">
+                "If Ark Console feels empowering, it is wrong."
+            </blockquote>
+            <p class="callout-subtext">
+                The system should feel calm, conservative, boring, and hard to misuse.<br>
+                Slowness is a feature. Strictness is a feature. Tedium is correct operation.
+            </p>
         </div>
     </section>
 
-    <!-- Solution Section -->
-    <section class="solution" id="how-it-works">
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
         <div class="container">
-            <div class="solution-header">
-                <h2 class="section-label">The Solution</h2>
-                <h3 class="section-title">First Principles Autonomy</h3>
+            <div class="section-header">
+                <h2 class="section-label">Core Philosophy</h2>
+                <h3 class="section-title">Five Non-Negotiable Axioms</h3>
                 <p class="section-subtitle">
-                    We asked: What if a business could think, decide, and act — without waiting for humans?
+                    Every decision in Ark Console flows from these principles. No exceptions.
                 </p>
             </div>
-            <div class="solution-visual">
-                <div class="architecture">
-                    <div class="arch-layer arch-layer-1">
-                        <div class="arch-label">Your Business</div>
-                        <div class="arch-nodes">
-                            <div class="arch-node">Sales</div>
-                            <div class="arch-node">Operations</div>
-                            <div class="arch-node">Finance</div>
-                            <div class="arch-node">Support</div>
-                            <div class="arch-node">Marketing</div>
-                        </div>
-                    </div>
-                    <div class="arch-connector">
-                        <div class="connector-line"></div>
-                        <div class="connector-pulse"></div>
-                    </div>
-                    <div class="arch-layer arch-layer-2">
-                        <div class="arch-core">
-                            <div class="core-ring ring-1"></div>
-                            <div class="core-ring ring-2"></div>
-                            <div class="core-ring ring-3"></div>
-                            <div class="core-center">
-                                <span class="core-icon">◈</span>
-                                <span class="core-label">Ark Console</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arch-connector">
-                        <div class="connector-line"></div>
-                        <div class="connector-pulse"></div>
-                    </div>
-                    <div class="arch-layer arch-layer-3">
-                        <div class="arch-label">Autonomous Agents</div>
-                        <div class="arch-agents">
-                            <div class="agent" data-agent="revenue">
-                                <div class="agent-icon">⚡</div>
-                                <div class="agent-info">
-                                    <span class="agent-name">Revenue Agent</span>
-                                    <span class="agent-status">Optimizing pricing...</span>
-                                </div>
-                            </div>
-                            <div class="agent" data-agent="ops">
-                                <div class="agent-icon">⚙️</div>
-                                <div class="agent-info">
-                                    <span class="agent-name">Ops Agent</span>
-                                    <span class="agent-status">Scaling infrastructure...</span>
-                                </div>
-                            </div>
-                            <div class="agent" data-agent="support">
-                                <div class="agent-icon">💬</div>
-                                <div class="agent-info">
-                                    <span class="agent-name">Support Agent</span>
-                                    <span class="agent-status">Resolving 847 tickets...</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="axioms-grid">
+                <div class="axiom-card">
+                    <div class="axiom-number">01</div>
+                    <h4>Safety Priority</h4>
+                    <p>Features only exist if they reduce risk. Convenience is treated as liability. If a feature doesn't make the system safer, it doesn't ship.</p>
                 </div>
-            </div>
-            <div class="solution-steps">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h4>Connect Everything</h4>
-                    <p>Ark Console integrates with your entire stack in minutes. Every tool, every data source, every workflow — unified into one autonomous system.</p>
+                <div class="axiom-card">
+                    <div class="axiom-number">02</div>
+                    <h4>Graduated Autonomy</h4>
+                    <p>The system doesn't activate autonomy — it gradually increases it after proving safety benchmarks. Trust is earned through evidence, not granted by default.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h4>Define Objectives</h4>
-                    <p>Tell Ark what matters: revenue, efficiency, customer satisfaction, growth. Set constraints. The system figures out the rest.</p>
+                <div class="axiom-card">
+                    <div class="axiom-number">03</div>
+                    <h4>Human Supervision</h4>
+                    <p>People observe and approve rather than continuously steer operations. The human role shifts from operator to supervisor — still essential, but appropriately positioned.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h4>Deploy Agents</h4>
-                    <p>Specialized AI agents take over operations. They monitor, analyze, decide, and execute — 24/7, at machine speed.</p>
+                <div class="axiom-card">
+                    <div class="axiom-number">04</div>
+                    <h4>Downward Power Flow</h4>
+                    <p>Autonomy automatically reduces when confidence drops. No manual escalation exists. The system fails safe — always toward more human control, never less.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">04</div>
-                    <h4>Scale Without Limits</h4>
-                    <p>As your business grows, Ark grows with it. No hiring. No training. No management overhead. Just autonomous scale.</p>
+                <div class="axiom-card featured">
+                    <div class="axiom-number">05</div>
+                    <h4>Visible Uncertainty</h4>
+                    <p>Every module must surface unknowns. Ambiguity blocks progress by default. The system never pretends to know more than it does.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Capabilities Section -->
-    <section class="capabilities" id="capabilities">
+    <!-- Autonomy Levels Section -->
+    <section class="autonomy-levels" id="autonomy-levels">
         <div class="container">
-            <div class="capabilities-header">
-                <h2 class="section-label">Capabilities</h2>
-                <h3 class="section-title">What Ark Console Does</h3>
-                <p class="section-subtitle">Every business function. Fully autonomous. Zero human bottlenecks.</p>
+            <div class="section-header">
+                <h2 class="section-label">Graduated Control</h2>
+                <h3 class="section-title">Five Autonomy Levels</h3>
+                <p class="section-subtitle">
+                    Autonomy moves downward automatically. Upward progression requires gate re-validation.
+                </p>
             </div>
-            <div class="capabilities-grid">
-                <div class="capability-card">
-                    <div class="capability-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
-                        </svg>
+            <div class="levels-visual">
+                <div class="levels-track">
+                    <div class="level" data-level="0">
+                        <div class="level-indicator">
+                            <span class="level-number">L0</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Shadow Mode</h4>
+                            <p>Observation and logging only. The system watches but takes no action. Building baseline understanding.</p>
+                            <div class="level-permissions">
+                                <span class="permission denied">No execution</span>
+                                <span class="permission denied">No recommendations</span>
+                                <span class="permission allowed">Logging only</span>
+                            </div>
+                        </div>
                     </div>
-                    <h4>Autonomous Operations</h4>
-                    <p>Infrastructure scales automatically. Deployments happen without engineers. Incidents resolve before humans notice.</p>
-                    <div class="capability-metric">
-                        <span class="metric-value">99.99%</span>
-                        <span class="metric-label">Self-healing rate</span>
+                    <div class="level" data-level="1">
+                        <div class="level-indicator">
+                            <span class="level-number">L1</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Advisory</h4>
+                            <p>Draft actions with consequence preview. No execution. Human sees what the system would do, with full impact analysis.</p>
+                            <div class="level-permissions">
+                                <span class="permission denied">No execution</span>
+                                <span class="permission allowed">Draft actions</span>
+                                <span class="permission allowed">Impact preview</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="2">
+                        <div class="level-indicator">
+                            <span class="level-number">L2</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Reversible Execution</h4>
+                            <p>Only undo-able actions permitted. Full audit trails. If it can't be reversed, it requires human execution.</p>
+                            <div class="level-permissions">
+                                <span class="permission allowed">Reversible actions</span>
+                                <span class="permission denied">No permanent changes</span>
+                                <span class="permission allowed">Full audit trail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="3">
+                        <div class="level-indicator">
+                            <span class="level-number">L3</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Bounded Execution</h4>
+                            <p>Pre-approved low-risk actions with strict caps. Dollar limits, frequency limits, scope limits. Hard boundaries, no exceptions.</p>
+                            <div class="level-permissions">
+                                <span class="permission allowed">Capped actions</span>
+                                <span class="permission allowed">Pre-approved scope</span>
+                                <span class="permission denied">No limit override</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="4">
+                        <div class="level-indicator">
+                            <span class="level-number">L4</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Supervised Control</h4>
+                            <p>Full 90-day operating authority with weekly evidence requirements. Maximum autonomy — still supervised, still constrained, still accountable.</p>
+                            <div class="level-permissions">
+                                <span class="permission allowed">Full authority</span>
+                                <span class="permission allowed">90-day scope</span>
+                                <span class="permission required">Weekly evidence</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
+                <div class="levels-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <span>Autonomy can only move downward automatically. Upward requires re-validation.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules" id="modules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">System Architecture</h2>
+                <h3 class="section-title">Seven Core Modules</h3>
+                <p class="section-subtitle">
+                    Each module has a single responsibility. No overlap. No ambiguity.
+                </p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                         </svg>
                     </div>
-                    <h4>Revenue Intelligence</h4>
-                    <p>Dynamic pricing optimized in real-time. Churn predicted and prevented. Upsells triggered at perfect moments.</p>
-                    <div class="capability-metric">
-                        <span class="metric-value">+347%</span>
-                        <span class="metric-label">Revenue lift</span>
+                    <h4>Reality Intake</h4>
+                    <p>Ingests documents without inference. Extracts facts, flags ambiguities. Ambiguity blocks progression — no guessing, no assumptions.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> What we don't know matters more than what we do.
                     </div>
                 </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
+                <div class="module-card">
+                    <div class="module-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                         </svg>
                     </div>
-                    <h4>Customer Success</h4>
-                    <p>Support tickets resolved instantly. Customer health monitored continuously. Satisfaction engineered, not hoped for.</p>
-                    <div class="capability-metric">
-                        <span class="metric-value">94</span>
-                        <span class="metric-label">NPS score</span>
+                    <h4>Control Instrument Registry</h4>
+                    <p>Tracks lockbox, escrow, and DACA authorization. Effective dates, revocation terms, current status. Single source of control truth.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Authority must be documented, dated, and revocable.
                     </div>
                 </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
+                <div class="module-card">
+                    <div class="module-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
-                    <h4>Growth Engine</h4>
-                    <p>Marketing campaigns that optimize themselves. Lead scoring that never sleeps. Conversion funnels that evolve autonomously.</p>
-                    <div class="capability-metric">
-                        <span class="metric-value">12x</span>
-                        <span class="metric-label">CAC efficiency</span>
+                    <h4>Deposit Supervision</h4>
+                    <p>Monitors expected versus actual deposits. Variance detection, integrity scoring. 90-day stability required before any buyout recommendation.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Cash behavior reveals business health.
                     </div>
                 </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
+                <div class="module-card">
+                    <div class="module-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h4>Compliance & Risk</h4>
-                    <p>Regulations monitored and enforced automatically. Risk detected before it materializes. Audit trails that write themselves.</p>
-                    <div class="capability-metric">
-                        <span class="metric-value">100%</span>
-                        <span class="metric-label">Compliance rate</span>
+                    <h4>Disbursement Governance</h4>
+                    <p>Enforces approval matrices. Protects reserve floors. Automatically freezes on risk signals. Money doesn't move without proper authority.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Every dollar out requires verified authority in.
                     </div>
                 </div>
-                <div class="capability-card">
-                    <div class="capability-icon">
+                <div class="module-card">
+                    <div class="module-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
                     </div>
-                    <h4>Decision Intelligence</h4>
-                    <p>Strategic decisions backed by real-time data. Scenarios simulated in milliseconds. The right call, every time.</p>
-                    <div class="capability-metric">
-                        <span class="metric-value">847x</span>
-                        <span class="metric-label">Faster decisions</span>
+                    <h4>Authority Graph</h4>
+                    <p>Documents who performs actions, under which authority, until when. No action without attribution. No authority without expiration.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Accountability requires traceability.
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <h4>Decision Visibility</h4>
+                    <p>Logs what occurred, what was blocked, which rules fired, confidence changes. Complete audit trail. Nothing hidden, nothing summarized away.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> If you can't explain it, you can't defend it.
+                    </div>
+                </div>
+                <div class="module-card featured">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h4>Evidence Packet Generator</h4>
+                    <p>Creates weekly immutable proof of capital discipline and stability metrics. Court-ready documentation. Cryptographically signed. Tamper-evident.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Trust is built through verifiable evidence.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Vision Section -->
-    <section class="vision" id="vision">
-        <div class="vision-bg">
-            <div class="vision-gradient"></div>
-        </div>
+    <!-- Safety Gates Section -->
+    <section class="safety" id="safety">
         <div class="container">
-            <div class="vision-content">
-                <h2 class="section-label">The Vision</h2>
-                <h3 class="vision-title">
-                    The future of business<br>is <span class="text-gradient">autonomous</span>.
-                </h3>
-                <div class="vision-text">
-                    <p>
-                        Every industrial revolution has been about removing human limitations from production.
-                        Steam removed physical limits. Electricity removed geographic limits. Software removed information limits.
-                    </p>
-                    <p>
-                        <strong>AI removes operational limits.</strong>
-                    </p>
-                    <p>
-                        Ark Console is building the infrastructure for businesses that run themselves.
-                        Not businesses that are "AI-assisted" or "AI-enhanced" — but businesses that are genuinely,
-                        fundamentally autonomous.
-                    </p>
-                    <p>
-                        This isn't about replacing humans. It's about freeing them.
-                        When operations run autonomously, humans can focus on what only humans can do:
-                        vision, creativity, connection, meaning.
-                    </p>
+            <div class="section-header">
+                <h2 class="section-label">Hard Boundaries</h2>
+                <h3 class="section-title">Six Safety Gates</h3>
+                <p class="section-subtitle">
+                    Hard-fail conditions that prevent progression. No overrides. No exceptions.
+                </p>
+            </div>
+            <div class="safety-grid">
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Safety Baseline</h4>
+                    <p>Safety baseline verification required before any autonomy. System must prove it understands the environment before acting in it.</p>
                 </div>
-                <div class="vision-quote">
-                    <blockquote>
-                        "The best business is one that runs whether you're there or not.
-                        Ark Console makes that possible for everyone."
-                    </blockquote>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Detection Capability</h4>
+                    <p>System must outperform humans in detection capability. If humans catch things the system misses, autonomy doesn't increase.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Reversibility Requirement</h4>
+                    <p>No irreversible actions without delay and rollback paths. If it can't be undone, it requires explicit human authorization.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Pressure Response</h4>
+                    <p>Automatic autonomy reduction under time pressure or threats. When stakes rise, control tightens. Never the reverse.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Confidence Discipline</h4>
+                    <p>Lower confidence equals less autonomy. The system cannot act beyond its certainty level. Doubt triggers restriction.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>90-Day Stability</h4>
+                    <p>90-day deposit stability required before buyout recommendations. No shortcuts. No accelerated timelines. Evidence takes time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What It Doesn't Do Section -->
+    <section class="boundaries">
+        <div class="container">
+            <div class="boundaries-content">
+                <h2 class="section-label">Clear Boundaries</h2>
+                <h3 class="section-title">What Ark Console Never Does</h3>
+                <div class="boundaries-grid">
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never holds funds</span>
+                    </div>
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never executes transfers</span>
+                    </div>
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never fabricates authority</span>
+                    </div>
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never bypasses contracts</span>
+                    </div>
+                </div>
+                <p class="boundaries-note">
+                    Ark Console supervises and governs. It does not replace the legal and financial infrastructure that executes deals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seller Portal Section -->
+    <section class="portal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">Seller Experience</h2>
+                <h3 class="section-title">Document Lock Gate</h3>
+                <p class="section-subtitle">
+                    Portal access requires five documents. No attestation shortcuts for critical items.
+                </p>
+            </div>
+            <div class="portal-content">
+                <div class="documents-list">
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Interim Management Agreement</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Deposit Control Authorization</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Reporting Covenant</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                    <div class="document attestable">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Access Authorization</h5>
+                            <span class="document-attestation allowed">Attestation allowed</span>
+                        </div>
+                    </div>
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Reps & Disclosures Checklist</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portal-routes">
+                    <h5>Protected Routes</h5>
+                    <code>/seller/deal/[id]/dashboard</code>
+                    <code>/seller/deal/[id]/reports</code>
+                    <code>/seller/deal/[id]/messages</code>
+                    <p class="routes-note">All APIs return 403 if onboarding incomplete.</p>
                 </div>
             </div>
         </div>
@@ -392,19 +544,18 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Ready to go autonomous?</h2>
+                <h2 class="cta-title">Discipline over speed.<br>Evidence over intuition.</h2>
                 <p class="cta-subtitle">
-                    Join the companies that never sleep, never scale down, and never stop optimizing.
+                    Ark Console is for organizations that understand autonomy must be earned, not granted.
                 </p>
                 <div class="cta-actions">
                     <a href="#" class="btn btn-primary btn-large">
-                        <span>Request Early Access</span>
+                        <span>Request Access</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
                 </div>
-                <p class="cta-note">Currently onboarding select companies. Capacity limited.</p>
             </div>
         </div>
     </section>
@@ -418,34 +569,31 @@
                         <span class="logo-icon">◈</span>
                         <span class="logo-text">Ark Console</span>
                     </a>
-                    <p>Autonomous Business Infrastructure</p>
+                    <p>Autonomous Deal Governance</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-col">
-                        <h5>Product</h5>
-                        <a href="#how-it-works">How It Works</a>
-                        <a href="#capabilities">Capabilities</a>
-                        <a href="#">Documentation</a>
-                        <a href="#">API</a>
+                        <h5>System</h5>
+                        <a href="#philosophy">Philosophy</a>
+                        <a href="#autonomy-levels">Autonomy Levels</a>
+                        <a href="#modules">Modules</a>
+                        <a href="#safety">Safety Gates</a>
                     </div>
                     <div class="footer-col">
                         <h5>Company</h5>
                         <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Press</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Security</a>
                     </div>
                     <div class="footer-col">
                         <h5>Legal</h5>
                         <a href="#">Privacy</a>
                         <a href="#">Terms</a>
-                        <a href="#">Security</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Ark Console. All rights reserved.</p>
-                <p class="footer-tagline">Building the future of autonomous business.</p>
             </div>
         </div>
     </footer>
