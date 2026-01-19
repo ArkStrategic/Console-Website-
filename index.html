@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ark Console | Autonomous Deal Governance</title>
+    <meta name="description" content="Ark Console - The supervision layer for deal management. Graduated autonomy with human oversight.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Ark Console</span>
+            </a>
+            <div class="nav-links">
+                <a href="#philosophy">Philosophy</a>
+                <a href="fsd-portal.html">FSD Portal</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="#" class="nav-cta">Request Access</a>
+            </div>
+            <button class="nav-mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Autonomous Deal Governance
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Supervision.</span>
+                <span class="title-line">Not Automation.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Ark Console is the supervision layer for deal management. Like Tesla's Autopilot interface — it monitors, constrains, and validates autonomous systems while maintaining human oversight.
+            </p>
+            <div class="hero-cta">
+                <a href="#philosophy" class="btn btn-primary">
+                    <span>Understand the Philosophy</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-principles">
+                <div class="principle">
+                    <span class="principle-icon">◇</span>
+                    <span class="principle-text">Safety over convenience</span>
+                </div>
+                <div class="principle">
+                    <span class="principle-icon">◇</span>
+                    <span class="principle-text">Graduated trust</span>
+                </div>
+                <div class="principle">
+                    <span class="principle-icon">◇</span>
+                    <span class="principle-text">Human oversight</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="console-preview">
+                <div class="console-header">
+                    <div class="console-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="console-title">ark-console · deal supervision</span>
+                </div>
+                <div class="console-body">
+                    <div class="console-line">
+                        <span class="console-prompt">▸</span>
+                        <span class="console-text">Autonomy Level:</span>
+                        <span class="console-status level-2">ADVISORY</span>
+                    </div>
+                    <div class="console-line">
+                        <span class="console-prompt">▸</span>
+                        <span class="console-text">90-Day Control Period:</span>
+                        <span class="console-status">Day 34 of 90</span>
+                    </div>
+                    <div class="console-line">
+                        <span class="console-prompt">▸</span>
+                        <span class="console-text">Deposit variance detected</span>
+                        <span class="console-status warning">REVIEW REQUIRED</span>
+                    </div>
+                    <div class="console-line">
+                        <span class="console-prompt">▸</span>
+                        <span class="console-text">Disbursement request blocked</span>
+                        <span class="console-status blocked">GATE FAILED</span>
+                    </div>
+                    <div class="console-line">
+                        <span class="console-prompt">▸</span>
+                        <span class="console-text">Evidence packet generated</span>
+                        <span class="console-status success">IMMUTABLE</span>
+                    </div>
+                    <div class="console-line">
+                        <span class="console-prompt">◈</span>
+                        <span class="console-text dim">Awaiting human approval...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to learn more</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Design Philosophy Callout -->
+    <section class="callout">
+        <div class="container">
+            <blockquote class="callout-quote">
+                "If Ark Console feels empowering, it is wrong."
+            </blockquote>
+            <p class="callout-subtext">
+                The system should feel calm, conservative, boring, and hard to misuse.<br>
+                Slowness is a feature. Strictness is a feature. Tedium is correct operation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">Core Philosophy</h2>
+                <h3 class="section-title">Five Non-Negotiable Axioms</h3>
+                <p class="section-subtitle">
+                    Every decision in Ark Console flows from these principles. No exceptions.
+                </p>
+            </div>
+            <div class="axioms-grid">
+                <div class="axiom-card">
+                    <div class="axiom-number">01</div>
+                    <h4>Safety Priority</h4>
+                    <p>Features only exist if they reduce risk. Convenience is treated as liability. If a feature doesn't make the system safer, it doesn't ship.</p>
+                </div>
+                <div class="axiom-card">
+                    <div class="axiom-number">02</div>
+                    <h4>Graduated Autonomy</h4>
+                    <p>The system doesn't activate autonomy — it gradually increases it after proving safety benchmarks. Trust is earned through evidence, not granted by default.</p>
+                </div>
+                <div class="axiom-card">
+                    <div class="axiom-number">03</div>
+                    <h4>Human Supervision</h4>
+                    <p>People observe and approve rather than continuously steer operations. The human role shifts from operator to supervisor — still essential, but appropriately positioned.</p>
+                </div>
+                <div class="axiom-card">
+                    <div class="axiom-number">04</div>
+                    <h4>Downward Power Flow</h4>
+                    <p>Autonomy automatically reduces when confidence drops. No manual escalation exists. The system fails safe — always toward more human control, never less.</p>
+                </div>
+                <div class="axiom-card featured">
+                    <div class="axiom-number">05</div>
+                    <h4>Visible Uncertainty</h4>
+                    <p>Every module must surface unknowns. Ambiguity blocks progress by default. The system never pretends to know more than it does.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autonomy Levels Section -->
+    <section class="autonomy-levels" id="autonomy-levels">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">Graduated Control</h2>
+                <h3 class="section-title">Five Autonomy Levels</h3>
+                <p class="section-subtitle">
+                    Autonomy moves downward automatically. Upward progression requires gate re-validation.
+                </p>
+            </div>
+            <div class="levels-visual">
+                <div class="levels-track">
+                    <div class="level" data-level="0">
+                        <div class="level-indicator">
+                            <span class="level-number">L0</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Shadow Mode</h4>
+                            <p>Observation and logging only. The system watches but takes no action. Building baseline understanding.</p>
+                            <div class="level-permissions">
+                                <span class="permission denied">No execution</span>
+                                <span class="permission denied">No recommendations</span>
+                                <span class="permission allowed">Logging only</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="1">
+                        <div class="level-indicator">
+                            <span class="level-number">L1</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Advisory</h4>
+                            <p>Draft actions with consequence preview. No execution. Human sees what the system would do, with full impact analysis.</p>
+                            <div class="level-permissions">
+                                <span class="permission denied">No execution</span>
+                                <span class="permission allowed">Draft actions</span>
+                                <span class="permission allowed">Impact preview</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="2">
+                        <div class="level-indicator">
+                            <span class="level-number">L2</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Reversible Execution</h4>
+                            <p>Only undo-able actions permitted. Full audit trails. If it can't be reversed, it requires human execution.</p>
+                            <div class="level-permissions">
+                                <span class="permission allowed">Reversible actions</span>
+                                <span class="permission denied">No permanent changes</span>
+                                <span class="permission allowed">Full audit trail</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="3">
+                        <div class="level-indicator">
+                            <span class="level-number">L3</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Bounded Execution</h4>
+                            <p>Pre-approved low-risk actions with strict caps. Dollar limits, frequency limits, scope limits. Hard boundaries, no exceptions.</p>
+                            <div class="level-permissions">
+                                <span class="permission allowed">Capped actions</span>
+                                <span class="permission allowed">Pre-approved scope</span>
+                                <span class="permission denied">No limit override</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="level" data-level="4">
+                        <div class="level-indicator">
+                            <span class="level-number">L4</span>
+                        </div>
+                        <div class="level-content">
+                            <h4>Supervised Control</h4>
+                            <p>Full 90-day operating authority with weekly evidence requirements. Maximum autonomy — still supervised, still constrained, still accountable.</p>
+                            <div class="level-permissions">
+                                <span class="permission allowed">Full authority</span>
+                                <span class="permission allowed">90-day scope</span>
+                                <span class="permission required">Weekly evidence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="levels-note">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <span>Autonomy can only move downward automatically. Upward requires re-validation.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules" id="modules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">System Architecture</h2>
+                <h3 class="section-title">Seven Core Modules</h3>
+                <p class="section-subtitle">
+                    Each module has a single responsibility. No overlap. No ambiguity.
+                </p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h4>Reality Intake</h4>
+                    <p>Ingests documents without inference. Extracts facts, flags ambiguities. Ambiguity blocks progression — no guessing, no assumptions.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> What we don't know matters more than what we do.
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h4>Control Instrument Registry</h4>
+                    <p>Tracks lockbox, escrow, and DACA authorization. Effective dates, revocation terms, current status. Single source of control truth.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Authority must be documented, dated, and revocable.
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h4>Deposit Supervision</h4>
+                    <p>Monitors expected versus actual deposits. Variance detection, integrity scoring. 90-day stability required before any buyout recommendation.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Cash behavior reveals business health.
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h4>Disbursement Governance</h4>
+                    <p>Enforces approval matrices. Protects reserve floors. Automatically freezes on risk signals. Money doesn't move without proper authority.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Every dollar out requires verified authority in.
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h4>Authority Graph</h4>
+                    <p>Documents who performs actions, under which authority, until when. No action without attribution. No authority without expiration.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Accountability requires traceability.
+                    </div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                        </svg>
+                    </div>
+                    <h4>Decision Visibility</h4>
+                    <p>Logs what occurred, what was blocked, which rules fired, confidence changes. Complete audit trail. Nothing hidden, nothing summarized away.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> If you can't explain it, you can't defend it.
+                    </div>
+                </div>
+                <div class="module-card featured">
+                    <div class="module-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h4>Evidence Packet Generator</h4>
+                    <p>Creates weekly immutable proof of capital discipline and stability metrics. Court-ready documentation. Cryptographically signed. Tamper-evident.</p>
+                    <div class="module-principle">
+                        <span>Principle:</span> Trust is built through verifiable evidence.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Gates Section -->
+    <section class="safety" id="safety">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">Hard Boundaries</h2>
+                <h3 class="section-title">Six Safety Gates</h3>
+                <p class="section-subtitle">
+                    Hard-fail conditions that prevent progression. No overrides. No exceptions.
+                </p>
+            </div>
+            <div class="safety-grid">
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Safety Baseline</h4>
+                    <p>Safety baseline verification required before any autonomy. System must prove it understands the environment before acting in it.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Detection Capability</h4>
+                    <p>System must outperform humans in detection capability. If humans catch things the system misses, autonomy doesn't increase.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Reversibility Requirement</h4>
+                    <p>No irreversible actions without delay and rollback paths. If it can't be undone, it requires explicit human authorization.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Pressure Response</h4>
+                    <p>Automatic autonomy reduction under time pressure or threats. When stakes rise, control tightens. Never the reverse.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>Confidence Discipline</h4>
+                    <p>Lower confidence equals less autonomy. The system cannot act beyond its certainty level. Doubt triggers restriction.</p>
+                </div>
+                <div class="safety-gate">
+                    <div class="gate-status">
+                        <span class="gate-icon">⊘</span>
+                        <span class="gate-label">HARD GATE</span>
+                    </div>
+                    <h4>90-Day Stability</h4>
+                    <p>90-day deposit stability required before buyout recommendations. No shortcuts. No accelerated timelines. Evidence takes time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What It Doesn't Do Section -->
+    <section class="boundaries">
+        <div class="container">
+            <div class="boundaries-content">
+                <h2 class="section-label">Clear Boundaries</h2>
+                <h3 class="section-title">What Ark Console Never Does</h3>
+                <div class="boundaries-grid">
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never holds funds</span>
+                    </div>
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never executes transfers</span>
+                    </div>
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never fabricates authority</span>
+                    </div>
+                    <div class="boundary">
+                        <span class="boundary-icon">✕</span>
+                        <span class="boundary-text">Never bypasses contracts</span>
+                    </div>
+                </div>
+                <p class="boundaries-note">
+                    Ark Console supervises and governs. It does not replace the legal and financial infrastructure that executes deals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seller Portal Section -->
+    <section class="portal">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-label">Seller Experience</h2>
+                <h3 class="section-title">Document Lock Gate</h3>
+                <p class="section-subtitle">
+                    Portal access requires five documents. No attestation shortcuts for critical items.
+                </p>
+            </div>
+            <div class="portal-content">
+                <div class="documents-list">
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Interim Management Agreement</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Deposit Control Authorization</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Reporting Covenant</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                    <div class="document attestable">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Access Authorization</h5>
+                            <span class="document-attestation allowed">Attestation allowed</span>
+                        </div>
+                    </div>
+                    <div class="document required">
+                        <div class="document-status">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="document-info">
+                            <h5>Reps & Disclosures Checklist</h5>
+                            <span class="document-attestation">No attestation permitted</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portal-routes">
+                    <h5>Protected Routes</h5>
+                    <code>/seller/deal/[id]/dashboard</code>
+                    <code>/seller/deal/[id]/reports</code>
+                    <code>/seller/deal/[id]/messages</code>
+                    <p class="routes-note">All APIs return 403 if onboarding incomplete.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Discipline over speed.<br>Evidence over intuition.</h2>
+                <p class="cta-subtitle">
+                    Ark Console is for organizations that understand autonomy must be earned, not granted.
+                </p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <span>Request Access</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        <span class="logo-text">Ark Console</span>
+                    </a>
+                    <p>Autonomous Deal Governance</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>System</h5>
+                        <a href="#philosophy">Philosophy</a>
+                        <a href="#autonomy-levels">Autonomy Levels</a>
+                        <a href="#modules">Modules</a>
+                        <a href="#safety">Safety Gates</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <a href="#">About</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Legal</h5>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ark Console. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
