@@ -52,13 +52,22 @@ Autonomy moves downward automatically. Upward requires gate re-validation.
 
 The system should feel calm, conservative, boring, and hard to misuse.
 
+## Pricing Tiers
+
+- **Autopilot** - $5k/mo + 5% value share
+- **Full Self-Driving** - 1% EBITDA + 15% value share (8% hurdle)
+- **FSD Premium** - 2% EBITDA + 20% value share (10% hurdle)
+- **Enterprise** - Custom + 25% value share (12% hurdle)
+
 ## Website Structure
 
 ```
 ├── index.html       # Main landing page
 ├── fsd-portal.html  # FSD Autonomous Portal details
+├── pricing.html     # Pricing tiers and ROI calculator
 ├── styles.css       # All styles
-├── script.js        # Minimal JavaScript
+├── script.js        # Core JavaScript
+├── calculator.js    # ROI calculator logic
 └── README.md        # Documentation
 ```
 
