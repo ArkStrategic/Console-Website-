@@ -25,54 +25,67 @@
         <a href="#demo" class="btn">Watch It Work</a>
     </section>
 
-    <!-- Live Demo Visual -->
-    <section class="visual" id="demo">
-        <div class="console large">
-            <div class="console-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="console-title">ark-console</span>
+    <!-- FSD Demo -->
+    <section class="fsd-demo" id="demo">
+        <div class="fsd-container">
+            <div class="fsd-stages">
+                <div class="fsd-stage" data-stage="sense">
+                    <span class="stage-icon">◎</span>
+                    <span class="stage-label">SENSE</span>
+                </div>
+                <div class="fsd-stage" data-stage="perceive">
+                    <span class="stage-icon">◈</span>
+                    <span class="stage-label">PERCEIVE</span>
+                </div>
+                <div class="fsd-stage" data-stage="decide">
+                    <span class="stage-icon">◇</span>
+                    <span class="stage-label">DECIDE</span>
+                </div>
+                <div class="fsd-stage" data-stage="act">
+                    <span class="stage-icon">▸</span>
+                    <span class="stage-label">ACT</span>
+                </div>
+                <div class="fsd-stage" data-stage="learn">
+                    <span class="stage-icon">○</span>
+                    <span class="stage-label">LEARN</span>
+                </div>
             </div>
-            <div class="console-body">
-                <div class="console-line">
-                    <span class="prompt">▸</span>
-                    <span>System Status</span>
-                    <span class="tag green">AUTONOMOUS</span>
+            <div class="fsd-main">
+                <div class="fsd-metrics">
+                    <div class="metric">
+                        <span class="metric-label">Burn Rate</span>
+                        <span class="metric-value" id="metric-burn">$847K</span>
+                        <span class="metric-delta negative" id="delta-burn">↓ 12%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Runway</span>
+                        <span class="metric-value" id="metric-runway">18.4 mo</span>
+                        <span class="metric-delta positive" id="delta-runway">↑ 3.2 mo</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Efficiency</span>
+                        <span class="metric-value" id="metric-efficiency">94.2%</span>
+                        <span class="metric-delta positive" id="delta-efficiency">↑ 8.1%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Savings</span>
+                        <span class="metric-value" id="metric-savings">$2.4M</span>
+                        <span class="metric-delta positive" id="delta-savings">↑ $180K</span>
+                    </div>
                 </div>
-                <div class="console-line">
-                    <span class="prompt">▸</span>
-                    <span>Confidence Score</span>
-                    <span class="tag">94.2%</span>
+                <div class="fsd-console">
+                    <div class="console-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="console-title">fsd-autopilot</span>
+                        <span class="console-status">AUTONOMOUS</span>
+                    </div>
+                    <div class="console-output" id="console-output"></div>
                 </div>
-                <div class="console-line">
-                    <span class="prompt">▸</span>
-                    <span>Actions Today</span>
-                    <span class="tag">847</span>
-                </div>
-                <div class="console-line">
-                    <span class="prompt">▸</span>
-                    <span>Human Interventions</span>
-                    <span class="tag green">0</span>
-                </div>
-                <div class="console-line">
-                    <span class="prompt">▸</span>
-                    <span>Next Evidence Packet</span>
-                    <span class="tag blue">2d 14h</span>
-                </div>
-                <div class="console-divider"></div>
-                <div class="console-line highlight">
-                    <span class="prompt">◈</span>
-                    <span>Cash anomaly detected → Auto-investigating...</span>
-                </div>
-                <div class="console-line highlight">
-                    <span class="prompt">◈</span>
-                    <span>Pattern matched: Seasonal variance</span>
-                    <span class="tag green">RESOLVED</span>
-                </div>
-                <div class="console-line dim">
-                    <span class="prompt">◈</span>
-                    <span>Awaiting next event...</span>
+                <div class="fsd-decisions">
+                    <div class="decisions-header">Decision Queue</div>
+                    <div class="decisions-list" id="decisions-list"></div>
                 </div>
             </div>
         </div>
@@ -163,5 +176,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="fsd-demo.js"></script>
 </body>
 </html>
