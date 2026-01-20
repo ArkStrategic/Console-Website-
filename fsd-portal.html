@@ -3,166 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSD Portal | Ark Console</title>
-    <meta name="description" content="Full Self-Driving for business operations.">
+    <title>Full Self-Driving | Ark Console</title>
+    <meta name="description" content="Autonomous business infrastructure. The system drives.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fsd-styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
-<body>
+<body class="fsd-body">
     <!-- Nav -->
-    <nav class="nav">
+    <nav class="nav nav-fixed">
         <a href="index.html" class="logo">◈ Ark Console</a>
         <a href="pricing.html" class="nav-link">Pricing</a>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Full Self-Driving.</h1>
-        <p class="hero-sub">For your business.</p>
-        <a href="#demo" class="btn">Watch It Work</a>
+    <!-- Hero - Full Screen -->
+    <section class="fsd-hero-full">
+        <div class="fsd-hero-content">
+            <h1>Full Self-Driving</h1>
+            <p>For business operations</p>
+        </div>
+        <div class="fsd-hero-visual">
+            <div class="orbit-system">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+                <div class="orbit-center">
+                    <span class="orbit-label">AUTONOMOUS</span>
+                </div>
+                <div class="orbit-node node-sense">◎</div>
+                <div class="orbit-node node-analyze">◈</div>
+                <div class="orbit-node node-decide">◇</div>
+                <div class="orbit-node node-execute">▸</div>
+                <div class="orbit-node node-learn">○</div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
     </section>
 
-    <!-- FSD Demo -->
-    <section class="fsd-demo" id="demo">
-        <div class="fsd-container">
-            <div class="fsd-stages">
-                <div class="fsd-stage" data-stage="sense">
-                    <span class="stage-icon">◎</span>
-                    <span class="stage-label">SENSE</span>
+    <!-- The System -->
+    <section class="fsd-section fsd-system">
+        <div class="section-label">THE SYSTEM</div>
+        <h2>Sense. Analyze. Decide.<br>Execute. Learn.</h2>
+        <p class="section-sub">A continuous loop that never stops.</p>
+        <div class="loop-horizontal">
+            <div class="loop-step">
+                <div class="loop-icon">◎</div>
+                <div class="loop-name">SENSE</div>
+                <div class="loop-desc">Data from all systems</div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+                <div class="loop-icon">◈</div>
+                <div class="loop-name">ANALYZE</div>
+                <div class="loop-desc">Pattern recognition</div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+                <div class="loop-icon">◇</div>
+                <div class="loop-name">DECIDE</div>
+                <div class="loop-desc">Within governance</div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+                <div class="loop-icon">▸</div>
+                <div class="loop-name">EXECUTE</div>
+                <div class="loop-desc">Across all systems</div>
+            </div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">
+                <div class="loop-icon">○</div>
+                <div class="loop-name">LEARN</div>
+                <div class="loop-desc">Improve from outcomes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="fsd-stats-banner">
+        <div class="stat-large">
+            <span class="stat-value">99.97%</span>
+            <span class="stat-name">Uptime</span>
+        </div>
+        <div class="stat-large">
+            <span class="stat-value">&lt;200ms</span>
+            <span class="stat-name">Decision Latency</span>
+        </div>
+        <div class="stat-large">
+            <span class="stat-value">500+</span>
+            <span class="stat-name">Integrations</span>
+        </div>
+        <div class="stat-large">
+            <span class="stat-value">0</span>
+            <span class="stat-name">Human Input Required</span>
+        </div>
+    </section>
+
+    <!-- What It Drives -->
+    <section class="fsd-section fsd-modules-section">
+        <div class="section-label">COVERAGE</div>
+        <h2>What It Drives</h2>
+        <div class="modules-horizontal">
+            <div class="module-block">
+                <div class="module-header">
+                    <span class="module-icon-lg">◈</span>
+                    <span class="module-title">Finance</span>
                 </div>
-                <div class="fsd-stage" data-stage="perceive">
-                    <span class="stage-icon">◈</span>
-                    <span class="stage-label">PERCEIVE</span>
+                <div class="module-list">
+                    <span>Accounts payable</span>
+                    <span>Invoice processing</span>
+                    <span>Cash flow optimization</span>
+                    <span>Expense categorization</span>
                 </div>
-                <div class="fsd-stage" data-stage="decide">
-                    <span class="stage-icon">◇</span>
-                    <span class="stage-label">DECIDE</span>
-                </div>
-                <div class="fsd-stage" data-stage="act">
-                    <span class="stage-icon">▸</span>
-                    <span class="stage-label">ACT</span>
-                </div>
-                <div class="fsd-stage" data-stage="learn">
-                    <span class="stage-icon">○</span>
-                    <span class="stage-label">LEARN</span>
+                <div class="module-metric">
+                    <span class="metric-big">94%</span>
+                    <span class="metric-label">auto-processed</span>
                 </div>
             </div>
-            <div class="fsd-main">
-                <div class="fsd-metrics">
-                    <div class="metric">
-                        <span class="metric-label">Burn Rate</span>
-                        <span class="metric-value" id="metric-burn">$847K</span>
-                        <span class="metric-delta negative" id="delta-burn">↓ 12%</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">Runway</span>
-                        <span class="metric-value" id="metric-runway">18.4 mo</span>
-                        <span class="metric-delta positive" id="delta-runway">↑ 3.2 mo</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">Efficiency</span>
-                        <span class="metric-value" id="metric-efficiency">94.2%</span>
-                        <span class="metric-delta positive" id="delta-efficiency">↑ 8.1%</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">Savings</span>
-                        <span class="metric-value" id="metric-savings">$2.4M</span>
-                        <span class="metric-delta positive" id="delta-savings">↑ $180K</span>
-                    </div>
+            <div class="module-block">
+                <div class="module-header">
+                    <span class="module-icon-lg">◎</span>
+                    <span class="module-title">Inventory</span>
                 </div>
-                <div class="fsd-console">
-                    <div class="console-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="console-title">fsd-autopilot</span>
-                        <span class="console-status">AUTONOMOUS</span>
-                    </div>
-                    <div class="console-output" id="console-output"></div>
+                <div class="module-list">
+                    <span>Demand forecasting</span>
+                    <span>Auto-reordering</span>
+                    <span>Supplier selection</span>
+                    <span>Stock optimization</span>
                 </div>
-                <div class="fsd-decisions">
-                    <div class="decisions-header">Decision Queue</div>
-                    <div class="decisions-list" id="decisions-list"></div>
+                <div class="module-metric">
+                    <span class="metric-big">89%</span>
+                    <span class="metric-label">auto-managed</span>
+                </div>
+            </div>
+            <div class="module-block">
+                <div class="module-header">
+                    <span class="module-icon-lg">○</span>
+                    <span class="module-title">Workforce</span>
+                </div>
+                <div class="module-list">
+                    <span>Shift scheduling</span>
+                    <span>Task assignment</span>
+                    <span>Capacity planning</span>
+                    <span>Performance tracking</span>
+                </div>
+                <div class="module-metric">
+                    <span class="metric-big">87%</span>
+                    <span class="metric-label">auto-scheduled</span>
+                </div>
+            </div>
+            <div class="module-block">
+                <div class="module-header">
+                    <span class="module-icon-lg">▸</span>
+                    <span class="module-title">Operations</span>
+                </div>
+                <div class="module-list">
+                    <span>Vendor management</span>
+                    <span>Contract renewals</span>
+                    <span>SLA monitoring</span>
+                    <span>Process optimization</span>
+                </div>
+                <div class="module-metric">
+                    <span class="metric-big">91%</span>
+                    <span class="metric-label">auto-operated</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- The Journey -->
-    <section class="journey">
-        <h2>The Journey</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <span class="timeline-day">Day 0</span>
-                <span class="timeline-label">Shadow Mode</span>
-                <p>AI watches. Learns. Takes no action.</p>
+    <section class="fsd-section fsd-journey-section">
+        <div class="section-label">THE JOURNEY</div>
+        <h2>90 Days to Autonomy</h2>
+        <div class="journey-visual">
+            <div class="journey-item">
+                <div class="journey-marker">L0</div>
+                <div class="journey-info">
+                    <span class="journey-day">Day 0</span>
+                    <span class="journey-title">Shadow</span>
+                    <span class="journey-desc">System observes. Learns patterns. Takes no action.</span>
+                </div>
             </div>
-            <div class="timeline-item">
-                <span class="timeline-day">Day 30</span>
-                <span class="timeline-label">Advisory</span>
-                <p>AI recommends. You decide.</p>
+            <div class="journey-item">
+                <div class="journey-marker">L1</div>
+                <div class="journey-info">
+                    <span class="journey-day">Day 14</span>
+                    <span class="journey-title">Advisory</span>
+                    <span class="journey-desc">System recommends. Human approves. Every time.</span>
+                </div>
             </div>
-            <div class="timeline-item">
-                <span class="timeline-day">Day 60</span>
-                <span class="timeline-label">Bounded</span>
-                <p>AI acts within strict limits.</p>
+            <div class="journey-item">
+                <div class="journey-marker">L2</div>
+                <div class="journey-info">
+                    <span class="journey-day">Day 30</span>
+                    <span class="journey-title">Assisted</span>
+                    <span class="journey-desc">System acts on low-risk. Human handles exceptions.</span>
+                </div>
             </div>
-            <div class="timeline-item active">
-                <span class="timeline-day">Day 90</span>
-                <span class="timeline-label">Full Autonomy</span>
-                <p>Your business runs itself.</p>
+            <div class="journey-item">
+                <div class="journey-marker">L3</div>
+                <div class="journey-info">
+                    <span class="journey-day">Day 60</span>
+                    <span class="journey-title">Supervised</span>
+                    <span class="journey-desc">System handles most operations. Human monitors.</span>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Features - Visual Grid -->
-    <section class="features">
-        <div class="feature">
-            <div class="feature-icon">◉</div>
-            <h3>Cash Intelligence</h3>
-            <p>Monitors every dollar. Catches anomalies before you do.</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">◈</div>
-            <h3>Auto Disbursements</h3>
-            <p>Approves spending within your rules. 24/7.</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">◇</div>
-            <h3>Evidence Packets</h3>
-            <p>Weekly proof. Cryptographically signed. Court-ready.</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">○</div>
-            <h3>Full Transparency</h3>
-            <p>See every decision. Every action. Every reason.</p>
+            <div class="journey-item active">
+                <div class="journey-marker">L4</div>
+                <div class="journey-info">
+                    <span class="journey-day">Day 90</span>
+                    <span class="journey-title">Autonomous</span>
+                    <span class="journey-desc">System drives. Human reviews weekly.</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Safety -->
-    <section class="safety-section">
-        <h2>Built to fail safe.</h2>
-        <p class="safety-sub">Confidence drops → Autonomy drops. Automatically.</p>
-        <div class="safety-visual">
-            <div class="safety-bar">
-                <div class="safety-fill" style="width: 94%"></div>
+    <section class="fsd-section fsd-safety-section">
+        <div class="section-label">FAIL-SAFE</div>
+        <h2>Built to Stop Itself</h2>
+        <p class="section-sub">Confidence drops. Autonomy drops. Automatically.</p>
+        <div class="safety-bar">
+            <div class="safety-gradient"></div>
+            <div class="safety-pointer"></div>
+        </div>
+        <div class="safety-scale">
+            <div class="scale-item">
+                <span class="scale-level">L0</span>
+                <span class="scale-name">Full Stop</span>
+                <span class="scale-range">&lt;50%</span>
             </div>
-            <div class="safety-labels">
-                <span>L0 Shadow</span>
-                <span>L1 Advisory</span>
-                <span>L2 Reversible</span>
-                <span>L3 Bounded</span>
-                <span class="active">L4 Full</span>
+            <div class="scale-item">
+                <span class="scale-level">L1</span>
+                <span class="scale-name">Advisory</span>
+                <span class="scale-range">50-70%</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-level">L2</span>
+                <span class="scale-name">Assisted</span>
+                <span class="scale-range">70-85%</span>
+            </div>
+            <div class="scale-item">
+                <span class="scale-level">L3</span>
+                <span class="scale-name">Supervised</span>
+                <span class="scale-range">85-95%</span>
+            </div>
+            <div class="scale-item active">
+                <span class="scale-level">L4</span>
+                <span class="scale-name">Autonomous</span>
+                <span class="scale-range">&gt;95%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evidence -->
+    <section class="fsd-section fsd-evidence-section">
+        <div class="section-label">TRANSPARENCY</div>
+        <h2>Every Decision. Documented.</h2>
+        <div class="evidence-row">
+            <div class="evidence-block">
+                <div class="evidence-icon">◈</div>
+                <h3>Decision Log</h3>
+                <p>Complete audit trail</p>
+            </div>
+            <div class="evidence-block">
+                <div class="evidence-icon">◎</div>
+                <h3>Weekly Packets</h3>
+                <p>Cryptographically signed</p>
+            </div>
+            <div class="evidence-block">
+                <div class="evidence-icon">○</div>
+                <h3>Rollback Ready</h3>
+                <p>Any decision reversible</p>
+            </div>
+            <div class="evidence-block">
+                <div class="evidence-icon">▸</div>
+                <h3>Compliance</h3>
+                <p>SOC 2, GDPR, custom</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="fsd-section fsd-specs-section">
+        <div class="section-label">SPECIFICATIONS</div>
+        <div class="specs-row">
+            <div class="spec-item">
+                <span class="spec-val">99.97%</span>
+                <span class="spec-lbl">Uptime SLA</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-val">&lt;200ms</span>
+                <span class="spec-lbl">Decision Latency</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-val">500+</span>
+                <span class="spec-lbl">Integrations</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-val">SOC 2</span>
+                <span class="spec-lbl">Type II Certified</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-val">256-bit</span>
+                <span class="spec-lbl">AES Encryption</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-val">90 days</span>
+                <span class="spec-lbl">To Full Autonomy</span>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta">
-        <h2>See it run your business.</h2>
+    <section class="fsd-cta-full">
+        <h2>See It Drive.</h2>
         <a href="#" class="btn btn-large">Request Demo</a>
     </section>
 
@@ -175,7 +336,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="fsd-demo.js"></script>
+    <script src="fsd-page.js"></script>
 </body>
 </html>
