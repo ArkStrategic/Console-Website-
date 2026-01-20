@@ -128,6 +128,7 @@ class FSDDemo {
     }
 
     renderDecisions() {
+        if (!this.decisionsList) return;
         this.decisionsList.innerHTML = this.decisions.slice(0, 5).map(d => `<div class="decision-item ${d.status}"><span class="decision-icon">${d.icon}</span><div class="decision-content"><div class="decision-title">${d.title}</div><div class="decision-meta">${d.meta}</div></div><span class="decision-status">${d.status === 'executing' ? 'Running' : d.status}</span></div>`).join('');
     }
 
