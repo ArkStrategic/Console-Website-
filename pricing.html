@@ -3,480 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing | Autonomous Operations for Your Portfolio | Ark Console</title>
-    <meta name="description" content="Ark Console pricing - From Autopilot to Full Self-Driving. We win when you win. Value-based pricing aligned with your success.">
+    <title>Pricing | Ark Console</title>
+    <meta name="description" content="Simple pricing. We win when you win.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Nav -->
     <nav class="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-icon">◈</span>
-                <span class="logo-text">Ark Console</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html#philosophy">Philosophy</a>
-                <a href="fsd-portal.html">FSD Portal</a>
-                <a href="pricing.html" class="active">Pricing</a>
-                <a href="#" class="nav-cta">Request Access</a>
-            </div>
-            <button class="nav-mobile-toggle" id="mobileToggle">
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        <a href="index.html" class="logo">◈ Ark Console</a>
+        <a href="fsd-portal.html" class="nav-link">Product</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pricing-hero">
-        <!-- Glowing Orbs Background -->
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>We win when you win.</h1>
+        <p class="hero-sub">Simple pricing aligned with your success.</p>
+    </section>
 
-        <div class="container">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                We Win When You Win
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">You keep most of</span>
-                <span class="title-line">everything we create.</span>
-            </h1>
-            <p class="hero-subtitle">
-                Value-based pricing aligned with your success. Low monthly fee + small share of documented value creation.
-                You keep 75-95% of every dollar we help generate. No value? No value fee.
-            </p>
-            <div class="hero-cta">
-                <a href="#tiers" class="btn btn-primary btn-large">
-                    <span>See Plans</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                    </svg>
-                </a>
-                <a href="#calculator" class="btn btn-secondary btn-large">
-                    <span>Calculate ROI</span>
-                </a>
-            </div>
+    <!-- Pricing Cards -->
+    <section class="pricing">
+        <div class="price-card">
+            <h3>Autopilot</h3>
+            <div class="price">$5k<span>/mo</span></div>
+            <p class="price-desc">AI recommends. You decide.</p>
+            <ul class="price-features">
+                <li>1 business</li>
+                <li>Advisory mode</li>
+                <li>Basic reporting</li>
+            </ul>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <div class="price-card featured">
+            <span class="price-badge">Most Popular</span>
+            <h3>Full Self-Driving</h3>
+            <div class="price">1%<span> EBITDA</span></div>
+            <p class="price-desc">Your business runs itself.</p>
+            <ul class="price-features">
+                <li>Up to 5 businesses</li>
+                <li>Full autonomy</li>
+                <li>Weekly evidence packets</li>
+                <li>15% value share above 8% hurdle</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Request Demo</a>
+        </div>
+
+        <div class="price-card">
+            <h3>Enterprise</h3>
+            <div class="price">Custom</div>
+            <p class="price-desc">Unlimited scale.</p>
+            <ul class="price-features">
+                <li>Unlimited businesses</li>
+                <li>Custom integration</li>
+                <li>Dedicated support</li>
+                <li>Custom terms</li>
+            </ul>
+            <a href="#" class="btn">Contact Sales</a>
         </div>
     </section>
 
-    <!-- Pricing Tiers -->
-    <section class="pricing-tiers" id="tiers">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">Choose Your Autonomy Level</h2>
-                <h3 class="section-title">From Supervised to <span class="gradient-text">Self-Driving</span></h3>
-                <p class="section-subtitle">
-                    Start where you're comfortable. Scale as trust builds. 90 days to full autonomy.
-                </p>
+    <!-- Value Share Explainer -->
+    <section class="explainer">
+        <h2>How value share works</h2>
+        <div class="explainer-visual">
+            <div class="explainer-row">
+                <span>Your EBITDA grows 15%</span>
             </div>
-            <div class="tiers-grid">
-                <!-- Autopilot -->
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3 class="tier-name">Autopilot</h3>
-                        <div class="tier-price">
-                            <span class="price-amount">$5K</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                        <div class="tier-value-fee">+ 5% of value created</div>
-                        <p class="tier-description">AI recommends, you decide. Perfect for learning the system.</p>
-                    </div>
-                    <div class="tier-features">
-                        <ul>
-                            <li><span class="feature-check">✓</span> 1 company</li>
-                            <li><span class="feature-check">✓</span> Up to 500 employees</li>
-                            <li><span class="feature-check">✓</span> 100 decisions/month</li>
-                            <li><span class="feature-check">✓</span> Cost reduction analysis</li>
-                            <li><span class="feature-check">✓</span> Basic reporting</li>
-                            <li><span class="feature-check">✓</span> Email support</li>
-                        </ul>
-                    </div>
-                    <div class="tier-footer">
-                        <span class="tier-commitment">3-month minimum</span>
-                        <a href="#" class="btn btn-secondary tier-btn">Get Started</a>
-                    </div>
-                </div>
-
-                <!-- Full Self-Driving -->
-                <div class="tier-card featured">
-                    <div class="tier-badge">Most Popular</div>
-                    <div class="tier-header">
-                        <h3 class="tier-name">Full Self-Driving</h3>
-                        <div class="tier-price">
-                            <span class="price-amount">1% EBITDA</span>
-                        </div>
-                        <div class="tier-price-range">$25K - $250K/month</div>
-                        <div class="tier-value-fee">+ 15% of value created</div>
-                        <div class="tier-hurdle">8% hurdle rate protection</div>
-                        <p class="tier-description">True autonomy. AI operates, you supervise. Weekly check-ins.</p>
-                    </div>
-                    <div class="tier-features">
-                        <ul>
-                            <li><span class="feature-check">✓</span> Up to 5 companies</li>
-                            <li><span class="feature-check">✓</span> 5,000 employees per company</li>
-                            <li><span class="feature-check">✓</span> 1,000 decisions/month</li>
-                            <li><span class="feature-check">✓</span> Cost + Working Capital optimization</li>
-                            <li><span class="feature-check">✓</span> Autonomous execution</li>
-                            <li><span class="feature-check">✓</span> Approval workflows</li>
-                            <li><span class="feature-check">✓</span> Custom integrations</li>
-                            <li><span class="feature-check">✓</span> Dedicated success manager</li>
-                            <li><span class="feature-check">✓</span> Industry benchmarking</li>
-                        </ul>
-                    </div>
-                    <div class="tier-footer">
-                        <span class="tier-commitment">12-month commitment</span>
-                        <span class="tier-implementation">$100K implementation</span>
-                        <a href="#" class="btn btn-primary tier-btn">Request Demo</a>
-                    </div>
-                </div>
-
-                <!-- FSD Premium -->
-                <div class="tier-card">
-                    <div class="tier-header">
-                        <h3 class="tier-name">FSD Premium</h3>
-                        <div class="tier-price">
-                            <span class="price-amount">2% EBITDA</span>
-                        </div>
-                        <div class="tier-price-range">$100K minimum, uncapped</div>
-                        <div class="tier-value-fee">+ 20% of value created</div>
-                        <div class="tier-hurdle">10% hurdle rate protection</div>
-                        <p class="tier-description">Full fleet autonomy. Cross-portfolio intelligence. PE-grade.</p>
-                    </div>
-                    <div class="tier-features">
-                        <ul>
-                            <li><span class="feature-check">✓</span> Up to 25 companies</li>
-                            <li><span class="feature-check">✓</span> Unlimited employees</li>
-                            <li><span class="feature-check">✓</span> Unlimited decisions</li>
-                            <li><span class="feature-check">✓</span> All 22 value levers</li>
-                            <li><span class="feature-check">✓</span> Fleet intelligence</li>
-                            <li><span class="feature-check">✓</span> White glove onboarding</li>
-                            <li><span class="feature-check">✓</span> Quarterly business reviews</li>
-                            <li><span class="feature-check">✓</span> Custom model training</li>
-                        </ul>
-                    </div>
-                    <div class="tier-footer">
-                        <span class="tier-commitment">24-month commitment</span>
-                        <span class="tier-implementation">$500K implementation</span>
-                        <a href="#" class="btn btn-secondary tier-btn">Contact Sales</a>
-                    </div>
-                </div>
-
-                <!-- Enterprise -->
-                <div class="tier-card enterprise">
-                    <div class="tier-header">
-                        <h3 class="tier-name">Enterprise</h3>
-                        <div class="tier-price">
-                            <span class="price-amount">Custom</span>
-                        </div>
-                        <div class="tier-price-range">Starting at 1.5% EBITDA</div>
-                        <div class="tier-value-fee">+ 25% of value created</div>
-                        <div class="tier-hurdle">12% hurdle rate protection</div>
-                        <p class="tier-description">Unlimited scale. Custom terms. Co-investment options.</p>
-                    </div>
-                    <div class="tier-features">
-                        <ul>
-                            <li><span class="feature-check">✓</span> Unlimited companies</li>
-                            <li><span class="feature-check">✓</span> Everything in Premium</li>
-                            <li><span class="feature-check">✓</span> Custom hurdle rates</li>
-                            <li><span class="feature-check">✓</span> Co-investment options</li>
-                            <li><span class="feature-check">✓</span> Board-level reporting</li>
-                            <li><span class="feature-check">✓</span> Dedicated engineering</li>
-                            <li><span class="feature-check">✓</span> Custom SLAs</li>
-                            <li><span class="feature-check">✓</span> On-premise option</li>
-                        </ul>
-                    </div>
-                    <div class="tier-footer">
-                        <span class="tier-commitment">36-month commitment</span>
-                        <span class="tier-implementation">Implementation included</span>
-                        <a href="#" class="btn btn-secondary tier-btn">Contact Sales</a>
-                    </div>
-                </div>
+            <div class="explainer-row">
+                <span>Hurdle rate protects first 8%</span>
+            </div>
+            <div class="explainer-row highlight">
+                <span>We share 15% of the 7% above hurdle</span>
+            </div>
+            <div class="explainer-row result">
+                <span>You keep 93% of all growth</span>
             </div>
         </div>
-    </section>
-
-    <!-- ROI Calculator -->
-    <section class="calculator" id="calculator">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">See Your Numbers</h2>
-                <h3 class="section-title">Calculate Your <span class="gradient-text">ROI</span></h3>
-                <p class="section-subtitle">
-                    Adjust the sliders to see what autonomous operations could mean for your portfolio.
-                </p>
-            </div>
-            <div class="calculator-container">
-                <div class="calculator-inputs">
-                    <div class="input-group">
-                        <label for="ebitda">Annual EBITDA</label>
-                        <div class="slider-container">
-                            <input type="range" id="ebitda" min="5" max="100" value="25" step="1">
-                            <div class="slider-value">$<span id="ebitdaValue">25</span>M</div>
-                        </div>
-                        <div class="slider-range">
-                            <span>$5M</span>
-                            <span>$100M</span>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="improvement">Expected Improvement</label>
-                        <div class="slider-container">
-                            <input type="range" id="improvement" min="5" max="30" value="15" step="1">
-                            <div class="slider-value"><span id="improvementValue">15</span>%</div>
-                        </div>
-                        <div class="slider-range">
-                            <span>5%</span>
-                            <span>30%</span>
-                        </div>
-                    </div>
-                    <div class="input-group">
-                        <label for="tierSelect">Selected Plan</label>
-                        <select id="tierSelect">
-                            <option value="autopilot">Autopilot (5% value share)</option>
-                            <option value="fsd" selected>Full Self-Driving (15% share, 8% hurdle)</option>
-                            <option value="premium">FSD Premium (20% share, 10% hurdle)</option>
-                            <option value="enterprise">Enterprise (25% share, 12% hurdle)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="calculator-results">
-                    <div class="result-card highlight">
-                        <span class="result-label">Value Created</span>
-                        <span class="result-value" id="valueCreated">$3.75M</span>
-                        <span class="result-detail">Annual improvement</span>
-                    </div>
-                    <div class="result-card">
-                        <span class="result-label">Our Fees</span>
-                        <span class="result-value" id="ourFees">$562K</span>
-                        <span class="result-detail">Platform + value share</span>
-                    </div>
-                    <div class="result-card success">
-                        <span class="result-label">You Keep</span>
-                        <span class="result-value" id="youKeep">$3.19M</span>
-                        <span class="result-detail" id="keepPercent">85% of value created</span>
-                    </div>
-                    <div class="result-card">
-                        <span class="result-label">ROI</span>
-                        <span class="result-value" id="roi">567%</span>
-                        <span class="result-detail">Return on fees paid</span>
-                    </div>
-                </div>
-                <div class="calculator-note">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    <span>Hurdle rate protection means we only charge value share on improvement above the hurdle. Your baseline growth is protected.</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">How Value Sharing Works</h2>
-                <h3 class="section-title">We Make Money When <span class="gradient-text">You Make Money</span></h3>
-                <p class="section-subtitle">
-                    Pure alignment. If we don't create value, we don't earn value share.
-                </p>
-            </div>
-            <div class="how-steps">
-                <div class="how-step">
-                    <div class="how-step-number">1</div>
-                    <h4>Set the Baseline</h4>
-                    <p>We document your starting EBITDA with clear metrics. This becomes the baseline against which all value is measured. No games, no ambiguity.</p>
-                </div>
-                <div class="how-arrow">→</div>
-                <div class="how-step">
-                    <div class="how-step-number">2</div>
-                    <h4>AI Creates Value</h4>
-                    <p>Ark Console autonomously optimizes operations. Every improvement is tracked, measured, and documented in weekly evidence packets. Full transparency.</p>
-                </div>
-                <div class="how-arrow">→</div>
-                <div class="how-step">
-                    <div class="how-step-number">3</div>
-                    <h4>You Keep Most</h4>
-                    <p>We take a small percentage of documented value creation — only after the hurdle rate. You keep 75-95% of every dollar we help generate.</p>
-                </div>
-            </div>
-            <div class="hurdle-explainer">
-                <h4>How Hurdle Rate Protection Works</h4>
-                <p>The hurdle rate protects your baseline growth. If your EBITDA grows 15% and the hurdle is 8%, we only take our value share on the 7% above the hurdle. Your organic growth stays yours.</p>
-                <div class="hurdle-example">
-                    <div class="hurdle-row">
-                        <span class="hurdle-label">Starting EBITDA</span>
-                        <span class="hurdle-value">$50M</span>
-                    </div>
-                    <div class="hurdle-row">
-                        <span class="hurdle-label">Ending EBITDA</span>
-                        <span class="hurdle-value">$57.5M (+15%)</span>
-                    </div>
-                    <div class="hurdle-row">
-                        <span class="hurdle-label">Hurdle Rate (8%)</span>
-                        <span class="hurdle-value">$4M protected</span>
-                    </div>
-                    <div class="hurdle-row highlight">
-                        <span class="hurdle-label">Value Share Basis</span>
-                        <span class="hurdle-value">$3.5M (7% above hurdle)</span>
-                    </div>
-                    <div class="hurdle-row result">
-                        <span class="hurdle-label">Our Fee (15%)</span>
-                        <span class="hurdle-value">$525K</span>
-                    </div>
-                    <div class="hurdle-row result success">
-                        <span class="hurdle-label">You Keep</span>
-                        <span class="hurdle-value">$6.975M (93% of growth)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">Questions</h2>
-                <h3 class="section-title">Pricing <span class="gradient-text">FAQ</span></h3>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What if no value is created?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>You pay only the platform fee (monthly subscription). The value share is zero if we don't create measurable value above your hurdle rate. We have strong incentive to deliver — if we don't create value, we don't get paid the performance component.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How do you measure value created?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We establish clear baselines at contract start using your historical financials. Value is measured as EBITDA improvement over baseline, adjusted for market conditions (the hurdle rate). All calculations are transparent, auditable, and documented in weekly evidence packets.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What's the hurdle rate exactly?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The hurdle rate is the minimum growth rate we assume you'd achieve without us. It protects your organic growth from our value share. For FSD it's 8%, meaning if you grow 10%, we only charge value share on the 2% above hurdle. Enterprise clients can negotiate custom hurdle rates.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Can I upgrade plans?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes. You can upgrade at any time. The new plan's terms apply from the upgrade date forward. Downgrades are available at contract renewal. Implementation fees for upgrades are prorated based on features already deployed.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What's the high water mark?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>The high water mark prevents us from charging twice for the same improvement. If we improve your EBITDA from $50M to $55M, that $55M becomes the new baseline. We only charge value share on future improvement above $55M. If EBITDA drops and recovers, we don't charge again for recovering to previous levels.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What happens if I cancel?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Minimum commitment periods exist for each tier. Early cancellation incurs a fee equal to remaining platform fees. Value share obligations end at cancellation — we don't charge for value created after you leave. All your data is exported and returned within 30 days.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p class="explainer-note">No value created? No value share. Simple.</p>
     </section>
 
     <!-- CTA -->
-    <section class="pricing-cta">
-        <div class="container">
-            <div class="cta-banner">
-                <h2>Ready for aligned incentives?</h2>
-                <p>Schedule a demo and see how autonomous operations could transform your portfolio.</p>
-                <div class="cta-actions">
-                    <a href="#" class="btn btn-primary btn-large">
-                        <span>Request Demo</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="fsd-portal.html" class="btn btn-secondary btn-large">
-                        <span>Learn About FSD Portal</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section class="cta">
+        <h2>Ready to let it run?</h2>
+        <a href="#" class="btn btn-large">Request Access</a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-icon">◈</span>
-                        <span class="logo-text">Ark Console</span>
-                    </a>
-                    <p>Your Business Runs Itself</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h5>Product</h5>
-                        <a href="index.html">Overview</a>
-                        <a href="fsd-portal.html">FSD Portal</a>
-                        <a href="pricing.html">Pricing</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Company</h5>
-                        <a href="#">About</a>
-                        <a href="#">Documentation</a>
-                        <a href="#">Security</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Legal</h5>
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ark Console. All rights reserved.</p>
-            </div>
+        <span>© 2025 Ark Console</span>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="fsd-portal.html">Product</a>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script src="calculator.js"></script>
 </body>
 </html>

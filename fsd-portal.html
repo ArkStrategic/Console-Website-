@@ -3,467 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSD Portal | Your Business Runs Itself | Ark Console</title>
-    <meta name="description" content="Full Self-Driving for Business. The FSD Portal is autonomous infrastructure that runs your operations. Onboard. Stabilize. Let it run itself.">
+    <title>FSD Portal | Ark Console</title>
+    <meta name="description" content="Full Self-Driving for business operations.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Nav -->
     <nav class="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-icon">◈</span>
-                <span class="logo-text">Ark Console</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html#philosophy">Philosophy</a>
-                <a href="fsd-portal.html" class="active">FSD Portal</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="#" class="nav-cta">Request Access</a>
-            </div>
-            <button class="nav-mobile-toggle" id="mobileToggle">
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        <a href="index.html" class="logo">◈ Ark Console</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="fsd-hero">
-        <!-- Glowing Orbs Background -->
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-
-        <div class="container">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Full Self-Driving for Business
-            </div>
-            <h1 class="hero-title">
-                <span class="title-line">Your Business</span>
-                <span class="title-line">Runs Itself.</span>
-            </h1>
-            <p class="hero-subtitle">
-                The FSD Portal is autonomous infrastructure for business operations.
-                AI handles the routine — monitoring, optimizing, executing — while humans supervise.
-                90 days from onboarding to full autonomy.
-            </p>
-            <div class="hero-cta">
-                <a href="#flow" class="btn btn-primary btn-large">
-                    <span>See the Journey</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                    </svg>
-                </a>
-                <a href="pricing.html" class="btn btn-secondary btn-large">
-                    <span>View Pricing</span>
-                </a>
-            </div>
-        </div>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Full Self-Driving.</h1>
+        <p class="hero-sub">For your business.</p>
+        <a href="#demo" class="btn">Watch It Work</a>
     </section>
 
-    <!-- The Flow Section -->
-    <section class="fsd-flow" id="flow">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">The Autonomy Journey</h2>
-                <h3 class="section-title">From Onboarding to <span class="gradient-text">Full Autonomy</span></h3>
-                <p class="section-subtitle">
-                    Three phases. 90 days. Then your business drives itself.
-                </p>
+    <!-- Live Demo Visual -->
+    <section class="visual" id="demo">
+        <div class="console large">
+            <div class="console-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="console-title">ark-console</span>
             </div>
-            <div class="flow-visual">
-                <div class="flow-step">
-                    <div class="flow-step-number">1</div>
-                    <h4>Onboard</h4>
-                    <p>Connect systems, ingest data, establish baselines</p>
+            <div class="console-body">
+                <div class="console-line">
+                    <span class="prompt">▸</span>
+                    <span>System Status</span>
+                    <span class="tag green">AUTONOMOUS</span>
                 </div>
-                <span class="flow-arrow">→</span>
-                <div class="flow-step">
-                    <div class="flow-step-number">2</div>
-                    <h4>Stabilize</h4>
-                    <p>Build control instruments and governance rails</p>
+                <div class="console-line">
+                    <span class="prompt">▸</span>
+                    <span>Confidence Score</span>
+                    <span class="tag">94.2%</span>
                 </div>
-                <span class="flow-arrow">→</span>
-                <div class="flow-step">
-                    <div class="flow-step-number">3</div>
-                    <h4>Automate</h4>
-                    <p>Graduate to autonomous operations with weekly oversight</p>
+                <div class="console-line">
+                    <span class="prompt">▸</span>
+                    <span>Actions Today</span>
+                    <span class="tag">847</span>
                 </div>
-            </div>
-            <div class="flow-details">
-                <div class="flow-detail-card">
-                    <h4>Phase 1: Onboard</h4>
-                    <p>AI ingests your operational data — financials, workflows, obligations — and extracts facts without guessing. Ambiguities don't get buried, they get flagged and resolved before the system takes action.</p>
-                    <div class="flow-detail-why">
-                        <h5>The Difference</h5>
-                        <p>Traditional automation makes assumptions. FSD surfaces gaps instantly. Know exactly what your business looks like before AI starts operating.</p>
-                    </div>
-                    <ul class="flow-detail-list">
-                        <li>Zero-inference data ingestion</li>
-                        <li>Automatic ambiguity detection</li>
-                        <li>Financial baseline extraction</li>
-                        <li>Obligation mapping with triggers</li>
-                    </ul>
+                <div class="console-line">
+                    <span class="prompt">▸</span>
+                    <span>Human Interventions</span>
+                    <span class="tag green">0</span>
                 </div>
-                <div class="flow-detail-card">
-                    <h4>Phase 2: Stabilize</h4>
-                    <p>Control instruments are your autonomy foundation. Authorization agreements, approval matrices, governance rules — all verified and tracked with effective dates and status.</p>
-                    <div class="flow-detail-why">
-                        <h5>The Difference</h5>
-                        <p>You can't automate what you don't control. These instruments give AI the authority to operate. Without them, automation is just monitoring.</p>
-                    </div>
-                    <ul class="flow-detail-list">
-                        <li>Control instrument verification</li>
-                        <li>Authorization status tracking</li>
-                        <li>Governance rule enforcement</li>
-                        <li>Real-time authority verification</li>
-                    </ul>
+                <div class="console-line">
+                    <span class="prompt">▸</span>
+                    <span>Next Evidence Packet</span>
+                    <span class="tag blue">2d 14h</span>
                 </div>
-                <div class="flow-detail-card">
-                    <h4>Phase 3: Automate</h4>
-                    <p>After 90 days of proven stability, operations graduate to full autonomy. The AI handles routine decisions while generating weekly evidence packets proving everything is on track.</p>
-                    <div class="flow-detail-why">
-                        <h5>The Difference</h5>
-                        <p>Most "automation" requires constant babysitting. FSD earns your trust with 90 days of evidence, then operates independently with accountability.</p>
-                    </div>
-                    <ul class="flow-detail-list">
-                        <li>90-day stability certification</li>
-                        <li>Graduated autonomy progression</li>
-                        <li>Weekly evidence generation</li>
-                        <li>Continuous confidence scoring</li>
-                    </ul>
+                <div class="console-divider"></div>
+                <div class="console-line highlight">
+                    <span class="prompt">◈</span>
+                    <span>Cash anomaly detected → Auto-investigating...</span>
+                </div>
+                <div class="console-line highlight">
+                    <span class="prompt">◈</span>
+                    <span>Pattern matched: Seasonal variance</span>
+                    <span class="tag green">RESOLVED</span>
+                </div>
+                <div class="console-line dim">
+                    <span class="prompt">◈</span>
+                    <span>Awaiting next event...</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="fsd-features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">What FSD Does</h2>
-                <h3 class="section-title">The Command Center for <span class="gradient-text">Autonomous Ops</span></h3>
-                <p class="section-subtitle">
-                    Every feature exists to make your business run itself. Nothing extra. Nothing missing.
-                </p>
+    <!-- The Journey -->
+    <section class="journey">
+        <h2>The Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-day">Day 0</span>
+                <span class="timeline-label">Shadow Mode</span>
+                <p>AI watches. Learns. Takes no action.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h4>Operations Command Center</h4>
-                    <p>Real-time view of all operations with autonomy levels, risk indicators, and action items. One glance tells you what needs attention and what's running smoothly.</p>
-                    <div class="feature-why">
-                        <h5>Why It Matters</h5>
-                        <p>True autonomy means you check in weekly, not hourly. The dashboard surfaces only what needs human judgment — everything else runs automatically.</p>
-                    </div>
-                    <ul class="feature-details">
-                        <li>Live autonomy level display</li>
-                        <li>Smart anomaly alerts</li>
-                        <li>One-click approval workflows</li>
-                        <li>Evidence packet access</li>
-                        <li>Historical performance trends</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h4>Cash Intelligence</h4>
-                    <p>AI monitors cash flow patterns in real-time. Variances from expected behavior trigger alerts. Serious anomalies automatically tighten controls until investigated.</p>
-                    <div class="feature-why">
-                        <h5>Why It Matters</h5>
-                        <p>Cash is the heartbeat of a business. Unexpected patterns are early warning signs. The AI catches issues before they become crises.</p>
-                    </div>
-                    <ul class="feature-details">
-                        <li>Expected vs actual tracking</li>
-                        <li>Pattern anomaly detection</li>
-                        <li>Automatic control tightening</li>
-                        <li>90-day stability scoring</li>
-                        <li>Predictive cash modeling</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h4>Smart Disbursements</h4>
-                    <p>Every outgoing payment flows through AI-managed approval matrices. Reserve floors protect capital. Risk signals automatically freeze disbursements pending review.</p>
-                    <div class="feature-why">
-                        <h5>Why It Matters</h5>
-                        <p>Money out is irreversible. The AI applies the same rigor to every disbursement that you would — but 24/7 without fatigue or oversight gaps.</p>
-                    </div>
-                    <ul class="feature-details">
-                        <li>Dynamic approval matrices</li>
-                        <li>Reserve floor protection</li>
-                        <li>Risk-based auto-freeze</li>
-                        <li>Complete audit trail</li>
-                        <li>Authority verification</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h4>Authority Management</h4>
-                    <p>The Authority Graph tracks who can do what, under which authorization, until when. Every action has attribution. Every permission has an expiration.</p>
-                    <div class="feature-why">
-                        <h5>Why It Matters</h5>
-                        <p>Accountability requires traceability. When questions arise — from investors, regulators, or boards — you have complete documentation instantly.</p>
-                    </div>
-                    <ul class="feature-details">
-                        <li>Role-based access control</li>
-                        <li>Time-bounded permissions</li>
-                        <li>Delegation chain tracking</li>
-                        <li>Automatic expiration</li>
-                        <li>Audit-ready reports</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h4>Evidence Packets</h4>
-                    <p>Weekly immutable proof of operational discipline and stability. Cryptographically signed. Court-ready. Generated automatically — no human assembly required.</p>
-                    <div class="feature-why">
-                        <h5>Why It Matters</h5>
-                        <p>Trust at scale requires proof. Evidence packets let you demonstrate discipline to stakeholders without manual reporting.</p>
-                    </div>
-                    <ul class="feature-details">
-                        <li>Automated weekly generation</li>
-                        <li>Cryptographic signatures</li>
-                        <li>Tamper-evident storage</li>
-                        <li>Full decision trails</li>
-                        <li>Regulatory compliance ready</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h4>Decision Transparency</h4>
-                    <p>Complete record of every AI decision, every blocked action, every rule that fired. Nothing hidden. Full explainability for every autonomous action taken.</p>
-                    <div class="feature-why">
-                        <h5>Why It Matters</h5>
-                        <p>Black-box AI isn't acceptable for business operations. You can see exactly why the AI did what it did — or didn't do — at any moment.</p>
-                    </div>
-                    <ul class="feature-details">
-                        <li>Action-level logging</li>
-                        <li>Rule trigger documentation</li>
-                        <li>Confidence scoring history</li>
-                        <li>Block reason capture</li>
-                        <li>Human override tracking</li>
-                    </ul>
-                </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 30</span>
+                <span class="timeline-label">Advisory</span>
+                <p>AI recommends. You decide.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-day">Day 60</span>
+                <span class="timeline-label">Bounded</span>
+                <p>AI acts within strict limits.</p>
+            </div>
+            <div class="timeline-item active">
+                <span class="timeline-day">Day 90</span>
+                <span class="timeline-label">Full Autonomy</span>
+                <p>Your business runs itself.</p>
             </div>
         </div>
     </section>
 
-    <!-- Operator Portal Section -->
-    <section class="portal">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">Operator Experience</h2>
-                <h3 class="section-title">White-Glove <span class="gradient-text">Onboarding</span></h3>
-                <p class="section-subtitle">
-                    Operators get a premium experience with clear requirements and professional setup.
-                </p>
+    <!-- Features - Visual Grid -->
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">◉</div>
+            <h3>Cash Intelligence</h3>
+            <p>Monitors every dollar. Catches anomalies before you do.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">◈</div>
+            <h3>Auto Disbursements</h3>
+            <p>Approves spending within your rules. 24/7.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">◇</div>
+            <h3>Evidence Packets</h3>
+            <p>Weekly proof. Cryptographically signed. Court-ready.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">○</div>
+            <h3>Full Transparency</h3>
+            <p>See every decision. Every action. Every reason.</p>
+        </div>
+    </section>
+
+    <!-- Safety -->
+    <section class="safety-section">
+        <h2>Built to fail safe.</h2>
+        <p class="safety-sub">Confidence drops → Autonomy drops. Automatically.</p>
+        <div class="safety-visual">
+            <div class="safety-bar">
+                <div class="safety-fill" style="width: 94%"></div>
             </div>
-            <div class="portal-content">
-                <div class="documents-list">
-                    <div class="document required">
-                        <div class="document-status">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div class="document-info">
-                            <h5>Operations Agreement</h5>
-                            <span class="document-attestation">Document required — enables autonomy</span>
-                        </div>
-                    </div>
-                    <div class="document required">
-                        <div class="document-status">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div class="document-info">
-                            <h5>Control Authorization</h5>
-                            <span class="document-attestation">Document required — enables control</span>
-                        </div>
-                    </div>
-                    <div class="document required">
-                        <div class="document-status">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div class="document-info">
-                            <h5>Reporting Covenant</h5>
-                            <span class="document-attestation">Document required — enables transparency</span>
-                        </div>
-                    </div>
-                    <div class="document attestable">
-                        <div class="document-status">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div class="document-info">
-                            <h5>Access Authorization</h5>
-                            <span class="document-attestation allowed">Attestation available</span>
-                        </div>
-                    </div>
-                    <div class="document required">
-                        <div class="document-status">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <div class="document-info">
-                            <h5>System Configuration</h5>
-                            <span class="document-attestation">Document required — enables setup</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="portal-routes">
-                    <h5>Operator Dashboard Access</h5>
-                    <code>/ops/[id]/dashboard</code>
-                    <code>/ops/[id]/reports</code>
-                    <code>/ops/[id]/approvals</code>
-                    <code>/ops/[id]/evidence</code>
-                    <code>/ops/[id]/disbursements</code>
-                    <p class="routes-note">Unlocked after onboarding completion</p>
-                </div>
+            <div class="safety-labels">
+                <span>L0 Shadow</span>
+                <span>L1 Advisory</span>
+                <span>L2 Reversible</span>
+                <span>L3 Bounded</span>
+                <span class="active">L4 Full</span>
             </div>
         </div>
     </section>
 
-    <!-- How Autonomy Progresses -->
-    <section class="progression">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-label">The 90-Day Journey</h2>
-                <h3 class="section-title">From Onboarding to <span class="gradient-text">Full Autonomy</span></h3>
-                <p class="section-subtitle">
-                    Every business follows the same proven path. Each level earned through evidence.
-                </p>
-            </div>
-            <div class="progression-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>Day 0</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>System Intake</h4>
-                        <p>Data connected and AI begins extraction. System observes and learns your business's patterns without taking action.</p>
-                        <div class="timeline-level">L0: Shadow Mode</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>Week 1</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Control Establishment</h4>
-                        <p>Control instruments verified and registered. Authorization rules documented. AI begins making recommendations.</p>
-                        <div class="timeline-level">L1: Advisory Mode</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>Week 2-4</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Cash Baselining</h4>
-                        <p>System builds understanding of normal cash patterns. Drafts actions for your review. Building the foundation for autonomy.</p>
-                        <div class="timeline-level">L1: Advisory Mode</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>Day 30-60</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Reversible Operations</h4>
-                        <p>AI begins executing reversible actions autonomously. You approve irreversible decisions. Trust builds through track record.</p>
-                        <div class="timeline-level">L2: Reversible Execution</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <span>Day 60-90</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Bounded Operations</h4>
-                        <p>Pre-approved actions within defined limits. Dollar caps, frequency bounds, scope constraints. Evidence packets prove discipline.</p>
-                        <div class="timeline-level">L3: Bounded Execution</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker complete">
-                        <span>Day 90+</span>
-                    </div>
-                    <div class="timeline-content">
-                        <h4>Full Autonomy</h4>
-                        <p>Business runs itself with weekly check-ins. AI handles operations, generates evidence, surfaces only decisions that need you.</p>
-                        <div class="timeline-level">L4: Full Self-Driving</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
+    <!-- CTA -->
     <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Ready for your business to run itself?</h2>
-                <p class="cta-subtitle">
-                    Join the operators who've moved from daily management to weekly oversight.
-                    90 days to autonomy. Your time back forever.
-                </p>
-                <div class="cta-actions">
-                    <a href="#" class="btn btn-primary btn-large">
-                        <span>Get FSD Portal Access</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="pricing.html" class="btn btn-secondary btn-large">
-                        <span>See Pricing</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <h2>See it run your business.</h2>
+        <a href="#" class="btn btn-large">Request Demo</a>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-logo">
-                        <span class="logo-icon">◈</span>
-                        <span class="logo-text">Ark Console</span>
-                    </a>
-                    <p>Your Business Runs Itself</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h5>Product</h5>
-                        <a href="index.html#philosophy">Philosophy</a>
-                        <a href="index.html#autonomy-levels">Autonomy Levels</a>
-                        <a href="index.html#modules">Modules</a>
-                        <a href="index.html#safety">Safety</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Portal</h5>
-                        <a href="fsd-portal.html">FSD Portal</a>
-                        <a href="pricing.html">Pricing</a>
-                        <a href="#">Documentation</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Company</h5>
-                        <a href="#">About</a>
-                        <a href="#">Security</a>
-                        <a href="#">Terms</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Ark Console. All rights reserved.</p>
-            </div>
+        <span>© 2025 Ark Console</span>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="pricing.html">Pricing</a>
         </div>
     </footer>
 
