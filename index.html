@@ -25,85 +25,64 @@
         <span class="scroll-hint">↓</span>
     </section>
 
-    <!-- Command Center Preview -->
-    <section class="console-preview" id="demo">
-        <div class="console-window">
-            <div class="console-chrome">
-                <div class="chrome-dots">
-                    <span class="dot red"></span>
-                    <span class="dot yellow"></span>
-                    <span class="dot green"></span>
+    <!-- Autonomous Operations -->
+    <section class="auto-ops" id="demo">
+        <div class="auto-container">
+            <div class="auto-header">
+                <div class="auto-mode">
+                    <span class="mode-dot"></span>
+                    <span class="mode-text">FULL AUTONOMOUS</span>
                 </div>
-                <span class="chrome-title">Ark Console</span>
-                <div class="chrome-status">
-                    <span class="status-item"><span class="status-dot green"></span>SYSTEMS NOMINAL</span>
-                    <span class="status-time" id="status-time">21:39:03</span>
+                <div class="auto-stats">
+                    <div class="auto-stat">
+                        <span class="auto-stat-value" id="decisions-made">147</span>
+                        <span class="auto-stat-label">decisions today</span>
+                    </div>
+                    <div class="auto-stat">
+                        <span class="auto-stat-value" id="human-interventions">0</span>
+                        <span class="auto-stat-label">human interventions</span>
+                    </div>
                 </div>
             </div>
-            <div class="console-body">
-                <div class="console-sidebar">
-                    <div class="sidebar-section">COMMAND</div>
-                    <div class="sidebar-item active">Command Center</div>
-                    <div class="sidebar-item">Deal Radar</div>
-                    <div class="sidebar-item">Autonomy</div>
-                    <div class="sidebar-item">Governance</div>
-                    <div class="sidebar-section">OPERATIONS</div>
-                    <div class="sidebar-item">Operations</div>
-                    <div class="sidebar-item">Banking</div>
-                    <div class="sidebar-section">MODULES</div>
-                    <div class="sidebar-item">Finance</div>
-                    <div class="sidebar-item">Inventory</div>
-                    <div class="sidebar-item">Workforce</div>
+            <div class="auto-cycle">
+                <div class="cycle-stage" data-stage="sense">
+                    <div class="stage-ring"></div>
+                    <span class="stage-icon">◎</span>
+                    <span class="stage-name">SENSE</span>
                 </div>
-                <div class="console-main">
-                    <div class="main-header">
-                        <h2>COMMAND CENTER</h2>
-                        <div class="header-stats">
-                            <div class="header-stat">
-                                <span class="stat-label">SYSTEM HEALTH</span>
-                                <span class="stat-value green" id="sys-health">94%</span>
-                            </div>
-                            <div class="header-stat">
-                                <span class="stat-label">AUTONOMY</span>
-                                <span class="stat-value blue" id="sys-autonomy">87%</span>
-                            </div>
-                            <div class="header-stat">
-                                <span class="stat-label">ACTIVE DEALS</span>
-                                <span class="stat-value" id="sys-deals">3</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-grid">
-                        <div class="grid-card health-card">
-                            <div class="card-label">SYSTEM HEALTH</div>
-                            <div class="card-value green" id="health-value">94%</div>
-                            <div class="health-bar"><div class="health-fill" id="health-fill"></div></div>
-                        </div>
-                        <div class="grid-card autonomy-card">
-                            <div class="card-label">AUTONOMY RATE</div>
-                            <div class="card-value blue" id="autonomy-value">87%</div>
-                            <div class="card-sub" id="autonomy-sub">147 decisions / 3 escalations</div>
-                        </div>
-                        <div class="grid-card revenue-card">
-                            <div class="card-label">TOTAL REVENUE FLOWED</div>
-                            <div class="card-value" id="revenue-value">$1,404,000</div>
-                            <div class="card-sub positive">+$3,519 platform fees</div>
-                        </div>
-                        <div class="grid-card modules-card">
-                            <div class="card-label">MODULE STATUS</div>
-                            <div class="module-list">
-                                <div class="module-item"><span class="module-dot green"></span>INVENTORY<span class="module-status">RUNNING 94%</span></div>
-                                <div class="module-item"><span class="module-dot green"></span>WORKFORCE<span class="module-status">RUNNING 88%</span></div>
-                                <div class="module-item"><span class="module-dot green"></span>FINANCE<span class="module-status">RUNNING 96%</span></div>
-                                <div class="module-item"><span class="module-dot blue"></span>INTELLIGENCE<span class="module-status">ACTIVE 65%</span></div>
-                            </div>
-                        </div>
-                        <div class="grid-card decisions-card">
-                            <div class="card-label">RECENT DECISIONS</div>
-                            <div class="decision-feed" id="decision-feed"></div>
-                        </div>
-                    </div>
+                <div class="cycle-arrow">→</div>
+                <div class="cycle-stage" data-stage="analyze">
+                    <div class="stage-ring"></div>
+                    <span class="stage-icon">◈</span>
+                    <span class="stage-name">ANALYZE</span>
                 </div>
+                <div class="cycle-arrow">→</div>
+                <div class="cycle-stage" data-stage="decide">
+                    <div class="stage-ring"></div>
+                    <span class="stage-icon">◇</span>
+                    <span class="stage-name">DECIDE</span>
+                </div>
+                <div class="cycle-arrow">→</div>
+                <div class="cycle-stage" data-stage="execute">
+                    <div class="stage-ring"></div>
+                    <span class="stage-icon">▸</span>
+                    <span class="stage-name">EXECUTE</span>
+                </div>
+                <div class="cycle-arrow">→</div>
+                <div class="cycle-stage" data-stage="learn">
+                    <div class="stage-ring"></div>
+                    <span class="stage-icon">○</span>
+                    <span class="stage-name">LEARN</span>
+                </div>
+            </div>
+            <div class="auto-current">
+                <div class="current-action" id="current-action">
+                    <span class="action-label">NOW EXECUTING</span>
+                    <span class="action-text" id="action-text">Processing payroll disbursement</span>
+                </div>
+            </div>
+            <div class="auto-feed">
+                <div class="feed-scroll" id="auto-feed"></div>
             </div>
         </div>
     </section>
