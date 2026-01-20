@@ -57,6 +57,12 @@ body {
     letter-spacing: -0.02em;
 }
 
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
 .nav-link {
     font-size: 0.875rem;
     color: var(--gray);
