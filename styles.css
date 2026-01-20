@@ -107,6 +107,53 @@ body {
     50% { transform: translateY(10px); }
 }
 
+/* ==================== HERO WITH BACKGROUND DEMO ==================== */
+
+.hero-with-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg-demo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1100px;
+    padding: 2rem;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-bg-demo .fsd-stages {
+    margin-bottom: 2rem;
+}
+
+.hero-bg-demo .fsd-stage {
+    transform: scale(0.9);
+}
+
+.hero-bg-demo .fsd-main {
+    gap: 0.75rem;
+}
+
+.hero-bg-demo .fsd-console,
+.hero-bg-demo .fsd-decisions {
+    min-height: 200px;
+}
+
+.hero-bg-demo .console-output,
+.hero-bg-demo .decisions-list {
+    height: 160px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
 /* ==================== BUTTONS ==================== */
 
 .btn {

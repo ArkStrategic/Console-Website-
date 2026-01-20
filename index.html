@@ -18,42 +18,79 @@
         <a href="pricing.html" class="nav-link">Pricing</a>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Your business runs itself.</h1>
-        <p class="hero-sub">90 days to full autonomy.</p>
-        <a href="fsd-portal.html" class="btn">See How It Works</a>
-        <span class="scroll-hint">↓</span>
-    </section>
-
-    <!-- Console Visual -->
-    <section class="visual">
-        <div class="console">
-            <div class="console-line">
-                <span class="prompt">▸</span>
-                <span>Autonomy Level</span>
-                <span class="tag green">L4 ACTIVE</span>
-            </div>
-            <div class="console-line">
-                <span class="prompt">▸</span>
-                <span>Cash variance detected</span>
-                <span class="tag yellow">REVIEWING</span>
-            </div>
-            <div class="console-line">
-                <span class="prompt">▸</span>
-                <span>Disbursement approved</span>
-                <span class="tag green">EXECUTED</span>
-            </div>
-            <div class="console-line">
-                <span class="prompt">▸</span>
-                <span>Evidence packet</span>
-                <span class="tag blue">GENERATED</span>
-            </div>
-            <div class="console-line dim">
-                <span class="prompt">◈</span>
-                <span>Running autonomously...</span>
+    <!-- Hero with Background Demo -->
+    <section class="hero hero-with-bg">
+        <!-- Background FSD Demo -->
+        <div class="hero-bg-demo" id="demo">
+            <div class="fsd-container">
+                <div class="fsd-stages">
+                    <div class="fsd-stage" data-stage="sense">
+                        <span class="stage-icon">◎</span>
+                        <span class="stage-label">SENSE</span>
+                    </div>
+                    <div class="fsd-stage" data-stage="perceive">
+                        <span class="stage-icon">◈</span>
+                        <span class="stage-label">PERCEIVE</span>
+                    </div>
+                    <div class="fsd-stage" data-stage="decide">
+                        <span class="stage-icon">◇</span>
+                        <span class="stage-label">DECIDE</span>
+                    </div>
+                    <div class="fsd-stage" data-stage="act">
+                        <span class="stage-icon">▸</span>
+                        <span class="stage-label">ACT</span>
+                    </div>
+                    <div class="fsd-stage" data-stage="learn">
+                        <span class="stage-icon">○</span>
+                        <span class="stage-label">LEARN</span>
+                    </div>
+                </div>
+                <div class="fsd-main">
+                    <div class="fsd-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Burn Rate</span>
+                            <span class="metric-value" id="metric-burn">$847K</span>
+                            <span class="metric-delta negative" id="delta-burn">↓ 12%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Runway</span>
+                            <span class="metric-value" id="metric-runway">18.4 mo</span>
+                            <span class="metric-delta positive" id="delta-runway">↑ 3.2 mo</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Efficiency</span>
+                            <span class="metric-value" id="metric-efficiency">94.2%</span>
+                            <span class="metric-delta positive" id="delta-efficiency">↑ 8.1%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Savings</span>
+                            <span class="metric-value" id="metric-savings">$2.4M</span>
+                            <span class="metric-delta positive" id="delta-savings">↑ $180K</span>
+                        </div>
+                    </div>
+                    <div class="fsd-console">
+                        <div class="console-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="console-title">fsd-autopilot</span>
+                            <span class="console-status">AUTONOMOUS</span>
+                        </div>
+                        <div class="console-output" id="console-output"></div>
+                    </div>
+                    <div class="fsd-decisions">
+                        <div class="decisions-header">Decision Queue</div>
+                        <div class="decisions-list" id="decisions-list"></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Your business runs itself.</h1>
+            <p class="hero-sub">90 days to full autonomy.</p>
+        </div>
+        <span class="scroll-hint">↓</span>
     </section>
 
     <!-- Stats -->
@@ -108,5 +145,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="fsd-demo.js"></script>
 </body>
 </html>
