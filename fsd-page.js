@@ -9,6 +9,7 @@ class FSDPage {
         this.setupScrollReveal();
         this.animateOrbitNodes();
         this.setupJourneyProgress();
+        this.setupNavigation();
     }
 
     setupScrollReveal() {
@@ -63,6 +64,46 @@ class FSDPage {
                 item.style.transform = 'translateX(0)';
             }, i * 200);
         });
+    }
+
+    setupNavigation() {
+        const tabs = document.querySelectorAll('.nav-tab');
+        const sections = document.querySelectorAll('[id]');
+
+        // Smooth scroll
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = tab.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Active state on scroll
+        const updateActiveTab = () => {
+            let current = '';
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 150 && rect.bottom > 150) {
+                    current = section.id;
+                }
+            });
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.getAttribute('href') === `#${current}`) {
+                    tab.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', updateActiveTab, { passive: true });
+        updateActiveTab();
     }
 }
 
