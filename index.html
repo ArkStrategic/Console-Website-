@@ -18,71 +18,46 @@
         <a href="pricing.html" class="nav-link">Pricing</a>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Your business runs itself.</h1>
-        <p class="hero-sub">90 days to full autonomy.</p>
-        <span class="scroll-hint">↓</span>
-    </section>
+    <!-- Hero - The System Running -->
+    <section class="hero-auto" id="demo">
+        <div class="hero-auto-content">
+            <h1>Autonomous Business Infrastructure.</h1>
+            <div class="hero-status">
+                <span class="status-dot"></span>
+                <span class="status-text">SYSTEM ACTIVE</span>
+            </div>
+        </div>
 
-    <!-- Autonomous Operations -->
-    <section class="auto-ops" id="demo">
-        <div class="auto-container">
-            <div class="auto-header">
-                <div class="auto-mode">
-                    <span class="mode-dot"></span>
-                    <span class="mode-text">FULL AUTONOMOUS</span>
+        <div class="auto-visual">
+            <div class="auto-metrics">
+                <div class="auto-metric">
+                    <span class="metric-num" id="decisions-count">2,847</span>
+                    <span class="metric-label">decisions executed</span>
                 </div>
-                <div class="auto-stats">
-                    <div class="auto-stat">
-                        <span class="auto-stat-value" id="decisions-made">147</span>
-                        <span class="auto-stat-label">decisions today</span>
-                    </div>
-                    <div class="auto-stat">
-                        <span class="auto-stat-value" id="human-interventions">0</span>
-                        <span class="auto-stat-label">human interventions</span>
-                    </div>
+                <div class="auto-metric">
+                    <span class="metric-num green" id="uptime">99.97%</span>
+                    <span class="metric-label">autonomous uptime</span>
+                </div>
+                <div class="auto-metric">
+                    <span class="metric-num" id="human-touches">0</span>
+                    <span class="metric-label">human interventions</span>
                 </div>
             </div>
-            <div class="auto-cycle">
-                <div class="cycle-stage" data-stage="sense">
-                    <div class="stage-ring"></div>
-                    <span class="stage-icon">◎</span>
-                    <span class="stage-name">SENSE</span>
-                </div>
-                <div class="cycle-arrow">→</div>
-                <div class="cycle-stage" data-stage="analyze">
-                    <div class="stage-ring"></div>
-                    <span class="stage-icon">◈</span>
-                    <span class="stage-name">ANALYZE</span>
-                </div>
-                <div class="cycle-arrow">→</div>
-                <div class="cycle-stage" data-stage="decide">
-                    <div class="stage-ring"></div>
-                    <span class="stage-icon">◇</span>
-                    <span class="stage-name">DECIDE</span>
-                </div>
-                <div class="cycle-arrow">→</div>
-                <div class="cycle-stage" data-stage="execute">
-                    <div class="stage-ring"></div>
-                    <span class="stage-icon">▸</span>
-                    <span class="stage-name">EXECUTE</span>
-                </div>
-                <div class="cycle-arrow">→</div>
-                <div class="cycle-stage" data-stage="learn">
-                    <div class="stage-ring"></div>
-                    <span class="stage-icon">○</span>
-                    <span class="stage-name">LEARN</span>
-                </div>
+
+            <div class="auto-loop">
+                <div class="loop-stage" data-stage="sense"><span>SENSE</span></div>
+                <div class="loop-stage" data-stage="analyze"><span>ANALYZE</span></div>
+                <div class="loop-stage" data-stage="decide"><span>DECIDE</span></div>
+                <div class="loop-stage" data-stage="execute"><span>EXECUTE</span></div>
+                <div class="loop-stage" data-stage="learn"><span>LEARN</span></div>
             </div>
-            <div class="auto-current">
-                <div class="current-action" id="current-action">
-                    <span class="action-label">NOW EXECUTING</span>
-                    <span class="action-text" id="action-text">Processing payroll disbursement</span>
+
+            <div class="auto-stream">
+                <div class="stream-header">
+                    <span class="stream-title">LIVE OPERATIONS</span>
+                    <span class="stream-indicator"></span>
                 </div>
-            </div>
-            <div class="auto-feed">
-                <div class="feed-scroll" id="auto-feed"></div>
+                <div class="stream-feed" id="stream-feed"></div>
             </div>
         </div>
     </section>
